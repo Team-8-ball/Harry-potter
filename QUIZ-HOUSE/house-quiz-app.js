@@ -2,10 +2,14 @@ import html from '../html.js';
 
 function makeTemplate() {
     return html`
-    <h2>What is your favorite color scheme?</h2>
+    <div id="question">
+        <h2>What is your favorite color scheme?</h2>
+    </div>
+
+    <div id="choices">
     <form id="house-quiz">
         <div>
-            <input type="radio" id="choice-a" name="house" value="a" checked>
+            <input type="radio" id="choice-a" name="house" value="a">
                 <label for="choice-a">A. Scarlet and Gold</label>
         </div>
 
@@ -24,13 +28,14 @@ function makeTemplate() {
                 <label for="choice-d">D. Yellow and Black</label>
         </div>
     </form>
+    </div>
     `;
 }
 
 export default class HouseApp {
-    constructor(house, onSelect) {
+    constructor(house) {
         this.choice = house;
-        this.onSelect = onSelect;
+        //this isn't used yet
     }
     
     render() {
@@ -39,11 +44,13 @@ export default class HouseApp {
         const elements = form.elements;
         form.addEventListener('change', () => {
             event.preventDefault();
+
+            // window.location = '../MAP/map.html';
     
             const house = {
                 house: elements.house.value,
             };
-            console.log(house);
+            console.log('this is the users choice', house);
 
         });
 
