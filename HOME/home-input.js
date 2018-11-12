@@ -1,4 +1,5 @@
 import html from '../html.js';
+import resultsApi from '../result-api.js';
 
 function makeTemplate() {
     return html `
@@ -15,9 +16,6 @@ function makeTemplate() {
     `;
 }
 export default class InputName {
-    constructor(onSignIn) {
-        this.onSignIn = onSignIn;
-    }
 
 
     render() {
@@ -33,11 +31,12 @@ export default class InputName {
             const user = {
                 name: elements.name.value
             };
-            this.onSignIn(user);
 
-            window.location.replace('../MAP/map.html');
+            //window.location.replace('../MAP/map.html');
 
             console.log('This is the user`s name', user.name);
+
+            resultsApi.add(user);
         });
 
         return dom;   
