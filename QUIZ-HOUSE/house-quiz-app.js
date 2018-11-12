@@ -1,4 +1,5 @@
 import html from '../html.js';
+import resultsApi from '../result-api.js';
 
 function makeTemplate() {
     return html`
@@ -45,13 +46,14 @@ export default class HouseApp {
         form.addEventListener('change', () => {
             event.preventDefault();
 
-            // window.location = '../MAP/map.html';
+            window.location = '../MAP/map.html';
     
-            const house = {
-                house: elements.house.value,
+            const user = {
+                house: elements.house.value
             };
-            console.log('this is the users choice', house);
+            console.log('this is the users choice', user);
 
+            resultsApi.add(user);
         });
 
         return dom;
