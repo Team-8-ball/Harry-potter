@@ -1,5 +1,5 @@
 import App from './map-app.js';
 
 const app = new App;
-const root = document.getElementById('root')
+const root = document.getElementById('root');
 root.appendChild(app.render());
