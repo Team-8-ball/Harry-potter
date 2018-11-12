@@ -15,9 +15,9 @@ function makeTemplate() {
     `;
 }
 export default class InputName {
-    // constructor(onSignIn) {
-    //     this.onSignIn = onSignIn;
-    // }
+    constructor(onSignIn) {
+        this.onSignIn = onSignIn;
+    }
 
 
     render() {
@@ -33,7 +33,7 @@ export default class InputName {
             const user = {
                 name: elements.name.value
             };
-            // this.onSignIn(user);
+            this.onSignIn(user);
 
             window.location.replace('../MAP/map.html');
 
