@@ -29,10 +29,10 @@ export default class InputName {
   
 
             const user = {
-                name: elements.name.value
+                name: elements.name.value,
             };
 
-            //window.location.replace('../MAP/map.html');
+            window.location.replace('../MAP/map.html');
 
             console.log('This is the user`s name', user.name);
 
