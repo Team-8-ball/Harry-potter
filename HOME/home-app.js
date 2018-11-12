@@ -1,9 +1,11 @@
 import html from '../html.js';
+import InputName from './home-input.js';
 
 
 function makeTemplate() {
     return html` 
         <h1> Hello World </h1>
+        <div id="input-section"> </div>
 
     `;
 }
@@ -11,7 +13,10 @@ function makeTemplate() {
 export default class App {
     render() {
         const dom = makeTemplate();
-        
+        const inputSection = dom.querySelector('#input-section');
+        const inputName = new InputName();
+        inputSection.appendChild(inputName.render());
+
         return dom;
     }
 }
