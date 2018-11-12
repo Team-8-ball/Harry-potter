@@ -32,7 +32,6 @@ function makeTemplate() {
     </div>
     `;
 }
-
 export default class HouseApp {
     constructor(house) {
         this.choice = house;
@@ -40,6 +39,9 @@ export default class HouseApp {
     }
     
     render() {
+
+        var api = resultsApi;
+
         const dom = makeTemplate();
         let form = dom.querySelector('form');
         const elements = form.elements;
@@ -47,13 +49,14 @@ export default class HouseApp {
             event.preventDefault();
 
             window.location = '../MAP/map.html';
-    
-            const user = {
-                house: elements.house.value
-            };
-            console.log('this is the users choice', user);
+            var getApi = resultsApi.getAll();
+            getApi[0].house = elements.house.value;
+            console.log('this is the api ', api);
 
-            resultsApi.add(user);
+            api.saveResults();
+    
+        
+            console.log('this is the users choice');
         });
 
         return dom;
