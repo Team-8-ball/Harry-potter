@@ -1,4 +1,4 @@
-import App from './map-app.js';
+import App from './end-story-app.js';
 
 const app = new App;
 const root = document.getElementById('root');
