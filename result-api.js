@@ -1,10 +1,13 @@
 let resultsArray = [];
 
-function saveResults() {
-    localStorage.setItem('results', JSON.stringify(resultsArray));
-}
+
 
 const resultsApi = {
+
+    saveResults() {
+        localStorage.setItem('results', JSON.stringify(resultsArray));
+    },
+
     getAll() {
         const json = localStorage.getItem('results');
         if(json) {
@@ -15,7 +18,7 @@ const resultsApi = {
     add(results) {
         resultsArray.push(results);
 
-        saveResults();
+        this.saveResults();
     }
 };
 
