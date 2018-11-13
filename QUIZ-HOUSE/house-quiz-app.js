@@ -10,25 +10,18 @@ function makeTemplate() {
 
     <div class="choices">
     <form id="house-quiz">
-        <div>
-            <input type="radio" id="choice-a" name="house" value="a">
-                <label for="choice-a">A. I volunteer to fight!</label>
-        </div>
+        <input type="radio" id="choice-a" name="house" value="a">
+            <label for="choice-a">A. I volunteer to fight!</label>
 
-        <div>
-            <input type="radio" id="choice-b" name="house" value="b">
-                <label for="choice-b">B. I attempt to confuse the troll into letting all three of us to pass without fighting.</label>
-        </div>
+        <input type="radio" id="choice-b" name="house" value="b">
+            <label for="choice-b">B. I attempt to confuse the troll into letting all three of us to pass without fighting.</label>
 
-        <div>
-            <input type="radio" id="choice-c" name="house" value="c">
-                <label for="choice-c">C. Sacrifice one of my friends for the good of the rest.</label>
-        </div>
+        <input type="radio" id="choice-c" name="house" value="c">
+            <label for="choice-c">C. Sacrifice one of my friends for the good of the rest.</label>
+    
+        <input type="radio" id="choice-d" name="house" value="d">
+            <label for="choice-d">D. Rock, paper, scissors.</label>
 
-        <div>
-            <input type="radio" id="choice-d" name="house" value="d">
-                <label for="choice-d">D. Rock, paper, scissors.</label>
-        </div>
     </form>
     </div>
     `;
