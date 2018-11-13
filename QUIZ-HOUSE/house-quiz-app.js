@@ -3,11 +3,11 @@ import resultsApi from '../result-api.js';
 
 function makeTemplate() {
     return html`
-    <div id="question">
+    <div class="question">
         <h2>Which sounds most like you?</h2>
     </div>
 
-    <div id="choices">
+    <div class="choices">
     <form id="house-quiz">
         <div>
             <input type="radio" id="choice-a" name="house" value="a">
@@ -33,11 +33,6 @@ function makeTemplate() {
     `;
 }
 export default class HouseApp {
-    constructor(house) {
-        this.choice = house;
-        //this isn't used yet
-    }
-    
     render() {
 
         var api = resultsApi;
