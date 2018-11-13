@@ -1,5 +1,5 @@
 import html from '../html.js';
-import resultsApi from '../result.api.js';
+import resultsApi from '../result-api.js';
 
 function makeTemplate() {
     return html`
@@ -43,16 +43,14 @@ export default class PatronusApp {
         var api = resultsApi;
         
         const dom = makeTemplate();
-        console.log('dom', 'form', dom, form);
         let form = dom.querySelector('form');
         const elements = form.elements;
         form.addEventListener('change', () => {
             event.preventDefault();
 
-            window.location = '../PATRONUS.map.html';
+            window.location = '../MAP/map.html';
             var getApi = resultsApi.getAll();
             getApi[0].patronus = elements.patronus.value;
-            console.log('this is the api', api);
 
             api.saveResults();
 

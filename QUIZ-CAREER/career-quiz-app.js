@@ -48,7 +48,7 @@ export default class CareerApp {
         form.addEventListener('change', () => {
             event.preventDefault();
 
-            // window.location = '../MAP/map.html';
+            window.location = '../MAP/map.html';
             var getApi = resultsApi.getAll();
             getApi[0].career = elements.career.value;
             console.log('this is the api ', api);
