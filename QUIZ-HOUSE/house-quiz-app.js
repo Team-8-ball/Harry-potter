@@ -5,28 +5,29 @@ function makeTemplate() {
     return html`
     <div class="question">
         <h2>Which sounds most like you?</h2>
+        <p>You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you:</p>
     </div>
 
     <div class="choices">
     <form id="house-quiz">
         <div>
             <input type="radio" id="choice-a" name="house" value="a">
-                <label for="choice-a">A. I put more effort in a secret handshake than on a potions essay.</label>
+                <label for="choice-a">A. I volunteer to fight!</label>
         </div>
 
         <div>
             <input type="radio" id="choice-b" name="house" value="b">
-                <label for="choice-b">B. I got detention for correcting the professor.</label>
+                <label for="choice-b">B. I attempt to confuse the troll into letting all three of us to pass without fighting.</label>
         </div>
 
         <div>
             <input type="radio" id="choice-c" name="house" value="c">
-                <label for="choice-c">C. I considered cheating on this quiz to get the house I want.</label>
+                <label for="choice-c">C. Sacrifice one of my friends for the good of the rest.</label>
         </div>
 
         <div>
             <input type="radio" id="choice-d" name="house" value="d">
-                <label for="choice-d">D. I am a very good finder.</label>
+                <label for="choice-d">D. Rock, paper, scissors.</label>
         </div>
     </form>
     </div>

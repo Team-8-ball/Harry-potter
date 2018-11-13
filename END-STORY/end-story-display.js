@@ -27,49 +27,49 @@ export default class DisplayText{
         const careerContainer = dom.querySelector('#career');
 
         if(userObj.wand === 'a'){
-            wandContainer.textContent = 'your wand choice a story here';
+            wandContainer.textContent = 'Hermione';
         } else if(userObj.wand === 'b') {
-            wandContainer.textContent = 'your wand choice b story here!';
+            wandContainer.textContent = 'Hagrid';
         } else if(userObj.wand === 'c') {
-            wandContainer.textContent = 'your wand choice c story here';
+            wandContainer.textContent = 'Peter Pettigrew';
         } else if(userObj.wand === 'd') {
-            wandContainer.textContent = 'your wand choice d story here.';
-        } else{
+            wandContainer.textContent = 'Harry';
+        } else {
             wandContainer.textContent = 'Go back to Diagon Alley and finish taking the quiz!';
         }
 
         if(userObj.house === 'a'){
-            houseContainer.textContent = 'your house choice a story here';
+            houseContainer.textContent = 'Your house is Gryffindor.';
         } else if(userObj.house === 'b') {
-            houseContainer.textContent = 'your house choice b story here!';
+            houseContainer.textContent = 'Your house is Ravenclaw.';
         } else if(userObj.house === 'c') {
-            houseContainer.textContent = 'your house choice c story here';
+            houseContainer.textContent = 'Slytherin';
         } else if(userObj.house === 'd') {
-            houseContainer.textContent = 'your house choice d story here.';
+            houseContainer.textContent = 'Hufflepuff for the win.';
         } else {
             houseContainer.textContent = 'Go back to the Great Hall and finish taking the quiz!';
         }
 
         if(userObj.patronus === 'a'){
-            patronusContainer.textContent = 'your patronus choice a story here';
+            patronusContainer.textContent = 'Ragdoll Cat';
         } else if(userObj.patronus === 'b') {
-            patronusContainer.textContent = 'your patronus choice b story here!';
+            patronusContainer.textContent = 'Basset Hound';
         } else if(userObj.patronus === 'c') {
-            patronusContainer.textContent = 'your patronus choice c story here';
-        } else if (userObj.patronus === 'd') {
-            patronusContainer.textContent = 'your patronus choice d story here.';
+            patronusContainer.textContent = 'Aardvark';
+        } else if(userObj.patronus === 'd') {
+            patronusContainer.textContent = 'Thestral';
         } else {
             patronusContainer.textContent = 'Go back to Defense Against the Dark Arts class and finish taking the quiz!';
         }
 
         if(userObj.career === 'a'){
-            careerContainer.textContent = 'your career choice a story here';
+            careerContainer.textContent = 'Auror';
         } else if(userObj.career === 'b') {
-            careerContainer.textContent = 'your career choice b story here!';
+            careerContainer.textContent = 'Professor';
         } else if(userObj.career === 'c') {
-            careerContainer.textContent = 'your career choice c story here';
+            careerContainer.textContent = 'Writer for the Daily Prophet';
         } else if(userObj.career === 'd') {
-            careerContainer.textContent = 'your career choice d story here.';
+            careerContainer.textContent = 'Minister of Magic';
         } else {
             careerContainer.textContent = 'Go back to Hogwarts and finish taking the quiz!';
         }
