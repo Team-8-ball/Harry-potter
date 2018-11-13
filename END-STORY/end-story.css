@@ -8,3 +8,12 @@ div{
     padding: 10px;
     margin: 5px;
 }
+
+a {
+    font-size: 20px;
+}
+
+a:visited {
+    color: black;
+}
+

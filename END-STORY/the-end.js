@@ -10,14 +10,11 @@ const magicDeaths = [
     'And in the end, you were sent to Azkaban for murder. Avada Kedavra!'
 ];
 
-console.log(magicDeaths[0]);
-
 function makeTemplate() {
     return html`
     <p id="death-time"></p>
     `;
 }
-
 
 export default class MagicEnd {
     render() {
