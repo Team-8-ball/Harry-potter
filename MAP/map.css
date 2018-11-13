@@ -3,23 +3,23 @@ html {
     background-size: cover;
 }
 
+#quiz-icon {
+    max-width: 100%;
+    max-height: auto;
+}
+
 #map-house {
-    display: flex;
-    flex-shrink: 3;
+    width: 50%;
+    max-width: 200px;
     height: 200px;
-    width: 200px;
 }
 
 #map-wand {
-    display: flex;
-    flex-shrink: 1;
     height: 200px;
     width: 200px;
 }
 
 #map-patronus {
-    display: flex;
-    flex-shrink: 1;
     border-radius: 100px;
     border: 3px solid black;
     height: 200px;
@@ -27,16 +27,12 @@ html {
 }
 
 #map-career {
-    display: flex;
-    flex-shrink: 1;
     height: 200px;
     width: 200px;
 }
 
 
 #map-door {
-    display: flex;
-    flex-shrink: 1;
     left: 50%;
     bottom: 100%;
 }
