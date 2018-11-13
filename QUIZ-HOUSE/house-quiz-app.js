@@ -47,12 +47,9 @@ export default class HouseApp {
             window.location = '../MAP/map.html';
             var getApi = resultsApi.getAll();
             getApi[0].house = elements.house.value;
-            console.log('this is the api ', api);
-
             api.saveResults();
     
         
-            console.log('this is the users choice');
         });
 
         return dom;
