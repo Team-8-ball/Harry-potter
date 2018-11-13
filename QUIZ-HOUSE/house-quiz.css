@@ -4,12 +4,7 @@ body {
     background-repeat: no-repeat;
 }
 
-#great-hall {
-    width: 95vw;
-    justify-content: center;
-}
-
-#question {
+.question {
     border: 1px solid antiquewhite;
     width: 95vw;
     text-align: center;
@@ -17,10 +12,14 @@ body {
     justify-content: center;
 }
 
-#choices {
+.choices {
     background: antiquewhite;
     border: 1px solid antiquewhite;
     width: 95vw;
     justify-content: center;
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+}
