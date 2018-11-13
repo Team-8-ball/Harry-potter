@@ -1,5 +1,6 @@
 import html from '../html.js';
 import resultsApi from '../result-api.js';
+import MagicEnd from './the-end.js';
 
 var apiData = resultsApi.getAll();
 var userObj = apiData[0];
@@ -8,10 +9,11 @@ console.log('dataAPI', userObj);
 
 function makeTemplate() {
     return html`
-    <div id="wand">Wand!</div>
-    <div id="house">Test!</div>
-    <div id="patronus">Patronus!</div>
-    <div id="career">Magical Career!</div>
+    <div id="wand"></div>
+    <div id="house"></div>
+    <div id="patronus"></div>
+    <div id="career"></div>
+    <div id="the-end"></div>
     `;
 }
 
@@ -71,6 +73,10 @@ export default class DisplayText{
         } else {
             careerContainer.textContent = 'Go back to Hogwarts and finish taking the quiz!';
         }
+
+        const magicEnd = new MagicEnd();
+        const endContainer = dom.querySelector('#the-end');
+        endContainer.appendChild(magicEnd.render());
 
         return dom;
     }
