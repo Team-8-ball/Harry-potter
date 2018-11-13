@@ -26,14 +26,25 @@ export default class App {
     render() {
         const dom = makeTemplate();
         let house = dom.querySelector('#map-house');
+        let patronus = dom.querySelector('#map-patronus');
+        let wand = dom.querySelector('#map-wand');
+        let career = dom.querySelector('#map-career');
+
+
+
         console.log('xyz', this.user);
         if(this.user.house) {
             house.classList.add('hidden');
-            console.log('if statement in the map', this.user);
         }
-        house.addEventListener('click', () => {
-
-        });
+        if(this.user.patronus) {
+            patronus.classList.add('hidden');
+        }
+        if(this.user.wand) {
+            wand.classList.add('hidden');
+        }
+        if(this.user.career) {
+            career.classList.add('hidden');
+        }
 
         return dom;
     }
