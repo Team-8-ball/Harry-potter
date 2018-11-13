@@ -9,25 +9,17 @@ function makeTemplate() {
 
 <div class="choices">
 <form id="patronus-quiz">
-    <div>
-        <input type="radio" id="choice-a" name="patronus" value="a">
-            <label for="choice-a">A. My family</label>
-    </div>
+    <input type="radio" id="choice-a" name="patronus" value="a">
+        <label for="choice-a">A. My family</label>
 
-    <div>
-        <input type="radio" id="choice-b" name="patronus" value="b">
-            <label for="choice-b">B. My friends</label>
-    </div>
+    <input type="radio" id="choice-b" name="patronus" value="b">
+        <label for="choice-b">B. My friends</label>
 
-    <div>
-        <input type="radio" id="choice-c" name="patronus" value="c">
-            <label for="choice-c">C. Personal achievements</label>
-    </div>
+    <input type="radio" id="choice-c" name="patronus" value="c">
+        <label for="choice-c">C. Personal achievements</label>
 
-    <div>
-        <input type="radio" id="choice-d" name="patronus" value="d">
-            <label for="choice-d">D. Happy memories? What?</label>
-    </div>
+    <input type="radio" id="choice-d" name="patronus" value="d">
+        <label for="choice-d">D. Happy memories? What?</label>
 </form>
 </div>
     `;
