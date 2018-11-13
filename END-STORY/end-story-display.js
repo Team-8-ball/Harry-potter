@@ -4,8 +4,6 @@ import MagicEnd from './the-end.js';
 
 var apiData = resultsApi.getAll();
 var userObj = apiData[0];
-console.log('dataAPI', userObj);
-
 
 function makeTemplate() {
     return html`
@@ -14,6 +12,9 @@ function makeTemplate() {
     <div id="patronus"></div>
     <div id="career"></div>
     <div id="the-end"></div>
+    <div id="return-home">
+        <button id="play-again">Play Again!</button>
+    </div>
     `;
 }
 
@@ -27,13 +28,13 @@ export default class DisplayText{
         const careerContainer = dom.querySelector('#career');
 
         if(userObj.wand === 'a'){
-            wandContainer.textContent = 'Hermione';
+            wandContainer.textContent = 'Your wand is 10 3/4" vine wood with dragon heartstring core. Wizards with this wand seek a greater purpose in life. You have the wand of Hermione Granger.';
         } else if(userObj.wand === 'b') {
-            wandContainer.textContent = 'Hagrid';
+            wandContainer.textContent = 'You were expelled from Hogwarts after being falsely accused of releasing a murderous basilisk. You took your broken wand pieces and fashioned an umbrella. You have the wand of Rubeus Hagrid.';
         } else if(userObj.wand === 'c') {
-            wandContainer.textContent = 'Peter Pettigrew';
+            wandContainer.textContent = 'Your wand is 9 1/4" chestnut with dragon heartstring core. You betrayed your friends and sold them to the Dark Lord. You have the wand of Peter Pettigrew.';
         } else if(userObj.wand === 'd') {
-            wandContainer.textContent = 'Harry';
+            wandContainer.textContent = 'Your wand is 11" holly with phoenix feather core. These wands are best with someone who seeks dangerous or spiritual quests. You have the wand of Harry Potter.';
         } else {
             wandContainer.textContent = 'Go back to Diagon Alley and finish taking the quiz!';
         }
@@ -73,6 +74,12 @@ export default class DisplayText{
         } else {
             careerContainer.textContent = 'Go back to Hogwarts and finish taking the quiz!';
         }
+
+        const button = dom.querySelector('button');
+        button.addEventListener('click', () => {
+            localStorage.clear();
+            window.location = '../HOME/home.html';
+        });
 
         const magicEnd = new MagicEnd();
         const endContainer = dom.querySelector('#the-end');
