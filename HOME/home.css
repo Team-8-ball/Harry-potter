@@ -1,0 +1,20 @@
+body {
+background-image: url("../ASSETS/background-login.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+div {
+    text-align: center;
+
+}
+h1 {
+    font-size: 60px;
+}
+label{
+    font-size: 20px;
+}
+#input-section {
+    padding-top: 10px;
+}

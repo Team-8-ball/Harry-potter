@@ -6,7 +6,7 @@ function makeTemplate() {
     <div id="input-section"> 
         <form class="sign-in"> 
         <p>
-        <label for="name">User:</label>
+        <label for="name">Name:</label>
         </p>
         <input name="name" id="name" placeholder="Muggle Name">
         <button> Start!</button>
