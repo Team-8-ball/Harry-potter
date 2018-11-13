@@ -44,7 +44,7 @@ export default class WandApp {
         
         form.addEventListener('change', () => {
             var getApi = resultsApi.getAll();
-            // window.location = '../MAP/map.html';
+            window.location = '../MAP/map.html';
             getApi[0].wand = elements.wand.value;
             console.log('this is the clicked choice', getApi[0].wand);
 
