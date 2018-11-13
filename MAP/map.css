@@ -1,21 +1,43 @@
-body {
-    background-image: url("../ASSETS/no-good.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+html {
+    background: url("../ASSETS/no-good.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
-img {
+#map-house {
+    display: flex;
+    flex-shrink: 3;
+    height: 200px;
+    width: 200px;
+}
+
+#map-wand {
+    display: flex;
+    flex-shrink: 1;
+    height: 200px;
+    width: 200px;
+}
+
+#map-patronus {
+    display: flex;
+    flex-shrink: 1;
     border-radius: 100px;
     border: 3px solid black;
     height: 200px;
     width: 200px;
 }
 
+#map-career {
+    display: flex;
+    flex-shrink: 1;
+    height: 200px;
+    width: 200px;
+}
 
 
 #map-door {
-    position: relative;
+    display: flex;
+    flex-shrink: 1;
     left: 50%;
-    bottom: 75%;
+    bottom: 100%;
 }
 
