@@ -4,30 +4,22 @@ import resultsApi from '../result-api.js';
 function makeTemplate() {
     return html`
     <div class="question">
-    <h2>Patronuseseses are fun</h2>
+    <h2>Explore your happiest memories... Think of your more treasured memory. What comes to mind first?</h2>
 </div>
 
 <div class="choices">
 <form id="patronus-quiz">
-    <div>
-        <input type="radio" id="choice-a" name="patronus" value="a">
-            <label for="choice-a">A. I'm Wild and Wooly!</label>
-    </div>
+    <input type="radio" id="choice-a" name="patronus" value="a">
+        <label for="choice-a">A. My family</label>
 
-    <div>
-        <input type="radio" id="choice-b" name="patronus" value="b">
-            <label for="choice-b">B. Don't cross me, I remember.</label>
-    </div>
+    <input type="radio" id="choice-b" name="patronus" value="b">
+        <label for="choice-b">B. My friends</label>
 
-    <div>
-        <input type="radio" id="choice-c" name="patronus" value="c">
-            <label for="choice-c">C. I'll follow you forever</label>
-    </div>
+    <input type="radio" id="choice-c" name="patronus" value="c">
+        <label for="choice-c">C. Personal achievements</label>
 
-    <div>
-        <input type="radio" id="choice-d" name="patronus" value="d">
-            <label for="choice-d">D. My world is my brain.</label>
-    </div>
+    <input type="radio" id="choice-d" name="patronus" value="d">
+        <label for="choice-d">D. Happy memories? What?</label>
 </form>
 </div>
     `;
@@ -49,10 +41,9 @@ export default class PatronusApp {
         form.addEventListener('change', () => {
             event.preventDefault();
 
-            window.location = '../PATRONUS.map.html';
+            window.location = '../MAP/map.html';
             var getApi = resultsApi.getAll();
             getApi[0].patronus = elements.patronus.value;
-            console.log('this is the api', api);
 
             api.saveResults();
 

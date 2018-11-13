@@ -3,41 +3,30 @@ import resultsApi from '../result-api.js';
 
 function makeTemplate() {
     return html`
-    <div id="question">
+    <div class="question">
         <h2>Which sounds most like you?</h2>
+        <p>You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you:</p>
     </div>
 
-    <div id="choices">
+    <div class="choices">
     <form id="house-quiz">
-        <div>
-            <input type="radio" id="choice-a" name="house" value="a">
-                <label for="choice-a">A. I put more effort in a secret handshake than on a potions essay.</label>
-        </div>
+        <input type="radio" id="choice-a" name="house" value="a">
+            <label for="choice-a">A. I volunteer to fight!</label>
 
-        <div>
-            <input type="radio" id="choice-b" name="house" value="b">
-                <label for="choice-b">B. I got detention for correcting the professor.</label>
-        </div>
+        <input type="radio" id="choice-b" name="house" value="b">
+            <label for="choice-b">B. I attempt to confuse the troll into letting all three of us to pass without fighting.</label>
 
-        <div>
-            <input type="radio" id="choice-c" name="house" value="c">
-                <label for="choice-c">C. I considered cheating on this quiz to get the house I want.</label>
-        </div>
+        <input type="radio" id="choice-c" name="house" value="c">
+            <label for="choice-c">C. Sacrifice one of my friends for the good of the rest.</label>
+    
+        <input type="radio" id="choice-d" name="house" value="d">
+            <label for="choice-d">D. Rock, paper, scissors.</label>
 
-        <div>
-            <input type="radio" id="choice-d" name="house" value="d">
-                <label for="choice-d">D. I am a very good finder.</label>
-        </div>
     </form>
     </div>
     `;
 }
 export default class HouseApp {
-    constructor(house) {
-        this.choice = house;
-        //this isn't used yet
-    }
-    
     render() {
 
         var api = resultsApi;
@@ -51,12 +40,9 @@ export default class HouseApp {
             window.location = '../MAP/map.html';
             var getApi = resultsApi.getAll();
             getApi[0].house = elements.house.value;
-            console.log('this is the api ', api);
-
             api.saveResults();
     
         
-            console.log('this is the users choice');
         });
 
         return dom;
