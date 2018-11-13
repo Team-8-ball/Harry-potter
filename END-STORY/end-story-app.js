@@ -3,14 +3,10 @@ import DisplayText from './end-story-display.js';
 
 function makeTemplate() {
     return html`
-        <h1>Hello! Imma End Story!<h1>
+        <h1>Read your magical story!<h1>
         <div id="end-story"></div>
-
     `;
 }
-
-
-
 
 export default class App {
     render() {
