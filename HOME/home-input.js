@@ -34,7 +34,7 @@ export default class InputName {
 
             window.location.replace('../MAP/map.html');
 
-            console.log('This is the user`s name', user.name);
+            console.log('This is the user`s name', user);
 
             resultsApi.add(user);
         });

@@ -41,3 +41,8 @@ html {
     bottom: 100%;
 }
 
+.hidden {
+    visibility: hidden;
+
+}
+

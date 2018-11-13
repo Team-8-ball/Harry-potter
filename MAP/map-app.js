@@ -1,4 +1,7 @@
 import html from '../html.js';
+import resultsApi from '../result-api.js';
+
+let user = resultsApi.getAll();
 
 function makeTemplate() {
     return html`
@@ -14,13 +17,34 @@ function makeTemplate() {
 
 
 
-
-
-
-
 export default class App {
+    constructor(){
+        this.user = user[0];
+    }
+
+
     render() {
         const dom = makeTemplate();
+        let house = dom.querySelector('#map-house');
+        let patronus = dom.querySelector('#map-patronus');
+        let wand = dom.querySelector('#map-wand');
+        let career = dom.querySelector('#map-career');
+
+
+
+        console.log('xyz', this.user);
+        if(this.user.house) {
+            house.classList.add('hidden');
+        }
+        if(this.user.patronus) {
+            patronus.classList.add('hidden');
+        }
+        if(this.user.wand) {
+            wand.classList.add('hidden');
+        }
+        if(this.user.career) {
+            career.classList.add('hidden');
+        }
 
         return dom;
     }
