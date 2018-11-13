@@ -4,29 +4,29 @@ import resultsApi from '../result-api.js';
 function makeTemplate() {
     return html`
     <div id="question">
-        <h2>What is your favorite color scheme?</h2>
+        <h2>Which sounds most like you?</h2>
     </div>
 
     <div id="choices">
     <form id="house-quiz">
         <div>
             <input type="radio" id="choice-a" name="house" value="a">
-                <label for="choice-a">A. Scarlet and Gold</label>
+                <label for="choice-a">A. I put more effort in a secret handshake than on a potions essay.</label>
         </div>
 
         <div>
             <input type="radio" id="choice-b" name="house" value="b">
-                <label for="choice-b">B. Blue and Bronze</label>
+                <label for="choice-b">B. I got detention for correcting the professor.</label>
         </div>
 
         <div>
             <input type="radio" id="choice-c" name="house" value="c">
-                <label for="choice-c">C. Green and Silver</label>
+                <label for="choice-c">C. I considered cheating on this quiz to get the house I want.</label>
         </div>
 
         <div>
             <input type="radio" id="choice-d" name="house" value="d">
-                <label for="choice-d">D. Yellow and Black</label>
+                <label for="choice-d">D. I am a very good finder.</label>
         </div>
     </form>
     </div>

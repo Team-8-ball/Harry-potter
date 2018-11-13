@@ -4,7 +4,7 @@ import InputName from './home-input.js';
 
 function makeTemplate() {
     return html` 
-        <h1> Hello World </h1>
+        <h1> Are you a Wizard? </h1>
         <div id="input-section"> </div>
 
     `;

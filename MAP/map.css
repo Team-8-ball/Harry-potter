@@ -1,21 +1,21 @@
 body {
-    background-image: url("../assets/parchment.jpg");
+    background-image: url("../ASSETS/no-good.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 100%;
 }
 
 img {
     border-radius: 100px;
     border: 3px solid black;
+    height: 200px;
+    width: 200px;
 }
 
 
 
 #map-door {
-    position: fixed;
-    top: 50%;
+    position: relative;
     left: 50%;
-    margin-top: -100px;
-    margin-left: -160px;   
+    bottom: 75%;
 }
 
