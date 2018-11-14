@@ -6,10 +6,10 @@ const answers = [{
     e: 'Go back to Diagon Alley and finish taking the quiz'
 },
 {
-    a: 'You are in Gryffindor house! The house of the brave, loyal',
-    b: 'Your house is Ravenclaw.',
-    c: 'Slytherin',
-    d: 'Hufflepuff for the win.',
+    a: '"Gryffindor!" bellows the Sorting Hat. "The house of the chivalry, daring, nerve, and courage!"',
+    b: '"Ravenclaw, of course! For your intelligence, wit, and creativity will do well in that house."',
+    c: '"Ah, yes, better be Slytherin! Your ambition, leadership, and resourcefulness will do well in that house."',
+    d: '"Hufflepuff! For your values of hard work, patience, loyalty, and justice are most important. to you."',
     e: 'Go back to the Great Hall and finish taking the quiz!'
 },
 {
