@@ -10,7 +10,7 @@ function makeTemplate() {
             <a href="../QUIZ-PATRONUS/patronus-quiz.html" id="map-patronus" ><img src="../ASSETS/group-patronus.jpg" alt="Group of Patronus"></a>
             <a href="../QUIZ-WAND/wand-quiz.html" id="map-wand"><img  src="../ASSETS/Three-wands.png" alt="a trio of wands"></a>
             <a href="../QUIZ-CAREER/career-quiz.html" id="map-career"><img  src="../ASSETS/ministry-magic.png" alt="Ministry of Magic Seal"></a>
-            <a href="../END-STORY/end-story.html" id="map-door" ><img src="../ASSETS/fancier-door.png" alt="A Secret Door - Your Future?"></a>
+            <a href="../END-STORY/end-story.html" id="map-door" ><img src="../ASSETS/fancier-door.png" alt="A Secret Door - Your Future?" class="hidden"></a>
         </div>
         `;
 }
@@ -28,6 +28,7 @@ export default class App {
         let patronus = dom.querySelector('#map-patronus');
         let wand = dom.querySelector('#map-wand');
         let career = dom.querySelector('#map-career');
+        let door = dom.querySelector('#map-door');
 
         if(this.user.house) {
             house.classList.add('hidden');
@@ -40,6 +41,10 @@ export default class App {
         }
         if(this.user.career) {
             career.classList.add('hidden');
+        }
+        if(this.user.career && this.user.wand && this.user.patronus && this.user.house) { 
+            door.classList.remove('hidden'); 
+
         }
 
         return dom;
