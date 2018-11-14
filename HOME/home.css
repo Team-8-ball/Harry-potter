@@ -1,3 +1,9 @@
+@font-face {
+    font-family: parryHotter;
+    src: url(ParryHotter.ttf);
+}
+
+
 body {
 background-image: url("../ASSETS/background-login.jpg");
 background-repeat: no-repeat;
@@ -5,11 +11,13 @@ background-size: cover;
 
 }
 
+
 div {
     text-align: center;
 
 }
 h1 {
+    font-family: parryHotter;
     font-size: 60px;
 }
 label{
@@ -17,4 +25,14 @@ label{
 }
 #input-section {
     padding-top: 10px;
+}
+#root {
+    color: black;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    height: 200px;
+    width: 450px;
+    margin: -100px 0 0 -200px;
+    top: 50%;
+    left: 50%;
 }
