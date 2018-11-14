@@ -8,7 +8,7 @@ function makeTemplate() {
         </div>
 
         <div class="choices">
-        <form id="house-quiz">
+        <form id="wand-quiz">
             <label for="choice-a">
                 <input type="radio" id="choice-a" name="wand" value="a">
                 A. Imperfection.
