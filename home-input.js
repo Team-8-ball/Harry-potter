@@ -1,5 +1,5 @@
-import html from '../html.js';
-import resultsApi from '../result-api.js';
+import html from './html.js';
+import resultsApi from './result-api.js';
 
 function makeTemplate() {
     return html `

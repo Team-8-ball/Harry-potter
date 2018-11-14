@@ -78,7 +78,7 @@ export default class DisplayText{
         const button = dom.querySelector('button');
         button.addEventListener('click', () => {
             localStorage.clear();
-            window.location = '../HOME/home.html';
+            window.location = '../index.html';
         });
 
         const magicEnd = new MagicEnd();
