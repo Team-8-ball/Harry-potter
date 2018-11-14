@@ -9,18 +9,25 @@ function makeTemplate() {
 
     <div class="choices">
     <form id="career-quiz">
-    <div>
-        <input type="radio" id="choice-a" name="career" value="a">
-            <label for="choice-a">A. Defending muggles against the Dark Arts.</label>
+        <label for="choice-a">
+            <input type="radio" id="choice-a" name="career" value="a">
+            A. Defending muggles against the Dark Arts.
+        </label>
     
-        <input type="radio" id="choice-b" name="career" value="b">
-            <label for="choice-b">B. Share my knowledge with the youth of tomorrow.</label>
+        <label for="choice-b">
+            <input type="radio" id="choice-b" name="career" value="b">
+            B. Share my knowledge with the youth of tomorrow.
+        </label>
     
-        <input type="radio" id="choice-c" name="career" value="c">
-            <label for="choice-c">C. Journalism</label>
+        <label for="choice-c">
+            <input type="radio" id="choice-c" name="career" value="c">
+            C. Journalism
+        </label>
     
-        <input type="radio" id="choice-d" name="career" value="d">
-            <label for="choice-d">D. Politics</label>
+        <label for="choice-d">
+            <input type="radio" id="choice-d" name="career" value="d">
+            D. Politics
+        </label>
     </form>
     </div>
     `;

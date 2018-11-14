@@ -30,7 +30,7 @@ export default class DisplayText{
         if(userObj.wand === 'a'){
             wandContainer.textContent = 'Your wand is 10 3/4" vine wood with dragon heartstring core. Wizards with this wand seek a greater purpose in life. You have the wand of Hermione Granger.';
         } else if(userObj.wand === 'b') {
-            wandContainer.textContent = 'You were expelled from Hogwarts after being falsely accused of releasing a murderous basilisk. You took your broken wand pieces and fashioned an umbrella. You have the wand of Rubeus Hagrid.';
+            wandContainer.textContent = 'You were expelled from Hogwarts after being falsely accused of releasing a murderous basilisk. You took your broken wand pieces and fashioned an umbrella for your magic wielding. You have the wand of Rubeus Hagrid.';
         } else if(userObj.wand === 'c') {
             wandContainer.textContent = 'Your wand is 9 1/4" chestnut with dragon heartstring core. You betrayed your friends and sold them to the Dark Lord. You have the wand of Peter Pettigrew.';
         } else if(userObj.wand === 'd') {
@@ -40,7 +40,7 @@ export default class DisplayText{
         }
 
         if(userObj.house === 'a'){
-            houseContainer.textContent = 'Your house is Gryffindor.';
+            houseContainer.textContent = 'You are in Gryffindor house! The house of the brave, loyal ';
         } else if(userObj.house === 'b') {
             houseContainer.textContent = 'Your house is Ravenclaw.';
         } else if(userObj.house === 'c') {

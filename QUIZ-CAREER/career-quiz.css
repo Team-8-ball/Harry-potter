@@ -1,3 +1,26 @@
-body{
-    background-color: lightskyblue;
+html {
+    background: url('../ASSETS/ministry.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#root {
+    color: black;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    height: 200px;
+    width: 450px;
+    margin: -100px 0 0 -200px;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#career-quiz {
+    display: flex;
+    justify-content: space-around;
 }

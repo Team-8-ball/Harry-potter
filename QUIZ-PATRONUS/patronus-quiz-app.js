@@ -4,22 +4,30 @@ import resultsApi from '../result-api.js';
 function makeTemplate() {
     return html`
     <div class="question">
-    <h2>Explore your happiest memories... Think of your more treasured memory. What comes to mind first?</h2>
+    <h3>Think of your happiest memory... What comes to mind first?</h3>
 </div>
 
 <div class="choices">
 <form id="patronus-quiz">
-    <input type="radio" id="choice-a" name="patronus" value="a">
-        <label for="choice-a">A. My family</label>
+    <label for="choice-a">
+        <input type="radio" id="choice-a" name="patronus" value="a">
+        A. My family.  
+    </label>
 
-    <input type="radio" id="choice-b" name="patronus" value="b">
-        <label for="choice-b">B. My friends</label>
+    <label for="choice-b">
+        <input type="radio" id="choice-b" name="patronus" value="b">
+        B. My friends. 
+    </label>
 
-    <input type="radio" id="choice-c" name="patronus" value="c">
-        <label for="choice-c">C. Personal achievements</label>
+    <label for="choice-c">
+        <input type="radio" id="choice-c" name="patronus" value="c">
+        C. Personal achievements
+    </label>
 
-    <input type="radio" id="choice-d" name="patronus" value="d">
-        <label for="choice-d">D. Happy memories? What?</label>
+    <label for="choice-d">
+        <input type="radio" id="choice-d" name="patronus" value="d">
+        D. Happy memories? What?
+    </label>
 </form>
 </div>
     `;
