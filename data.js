@@ -20,10 +20,10 @@ const answers = [{
     e: 'Go back to Defense Against the Dark Arts class and finish taking the quiz!'
 },
 {
-    a: 'Auror',
-    b: 'Professor',
-    c: 'Writer for the Daily Prophet',
-    d: 'Minister of Magic',
+    a: 'Your noble commitment to serving the world does not go unnoticed. You would make a perfect Auror! While the muggles may never know what you do, we will.',
+    b: 'Teaching the history of magic as a Professor would fit you nicely.',
+    c: 'Loving juicy gossip is a talent in its own right. Becoming a journalist for the Daily Prophet seems fitting.',
+    d: 'A little boring but without a doubt, it is the Minister of Magic for you young wizard.',
     e: 'Go back to Hogwarts and finish taking the quiz!'
 }];
 
