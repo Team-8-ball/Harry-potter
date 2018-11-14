@@ -1,17 +1,31 @@
 import html from '../html.js';
 import resultsApi from '../result-api.js';
 import MagicEnd from './the-end.js';
+import dataApi from '../data-api.js';
 
 var apiData = resultsApi.getAll();
+var answers = dataApi.getAll();
 var userObj = apiData[0];
 
 function makeTemplate() {
     return html`
-    <div id="wand"></div>
-    <div id="house"></div>
-    <div id="patronus"></div>
-    <div id="career"></div>
-    <div id="the-end"></div>
+    <div id="wand-response">
+        <span id="wand"></span>
+    </div>
+    <div id="house-response">
+        Filler text.
+        <span id="house"></span>
+        Filler text.
+    </div>
+    <div id="patronus-response">
+        <span id="patronus"></span>
+    </div>
+    <div id="career-response">
+        <span id="career"></span>
+    </div>
+    <div id="the-end-response">
+        <span id="the-end"></span>
+    </div>
     <div id="return-home">
         <button id="play-again">Play Again!</button>
     </div>
@@ -28,51 +42,51 @@ export default class DisplayText{
         const careerContainer = dom.querySelector('#career');
 
         if(userObj.wand === 'a'){
-            wandContainer.textContent = 'Your wand is 10 3/4" vine wood with dragon heartstring core. Wizards with this wand seek a greater purpose in life. You have the wand of Hermione Granger.';
+            wandContainer.textContent = answers[0].a;
         } else if(userObj.wand === 'b') {
-            wandContainer.textContent = 'You were expelled from Hogwarts after being falsely accused of releasing a murderous basilisk. You took your broken wand pieces and fashioned an umbrella for your magic wielding. You have the wand of Rubeus Hagrid.';
+            wandContainer.textContent = answers[0].b;
         } else if(userObj.wand === 'c') {
-            wandContainer.textContent = 'Your wand is 9 1/4" chestnut with dragon heartstring core. You betrayed your friends and sold them to the Dark Lord. You have the wand of Peter Pettigrew.';
+            wandContainer.textContent = answers[0].c;
         } else if(userObj.wand === 'd') {
-            wandContainer.textContent = 'Your wand is 11" holly with phoenix feather core. These wands are best with someone who seeks dangerous or spiritual quests. You have the wand of Harry Potter.';
+            wandContainer.textContent = answers[0].d;
         } else {
-            wandContainer.textContent = 'Go back to Diagon Alley and finish taking the quiz!';
+            wandContainer.textContent = answers[0].e;
         }
 
         if(userObj.house === 'a'){
-            houseContainer.textContent = 'You are in Gryffindor house! The house of the brave, loyal ';
+            houseContainer.textContent = answers[1].a;
         } else if(userObj.house === 'b') {
-            houseContainer.textContent = 'Your house is Ravenclaw.';
+            houseContainer.textContent = answers[1].b;
         } else if(userObj.house === 'c') {
-            houseContainer.textContent = 'Slytherin';
+            houseContainer.textContent = answers[1].c;
         } else if(userObj.house === 'd') {
-            houseContainer.textContent = 'Hufflepuff for the win.';
+            houseContainer.textContent = answers[1].d;
         } else {
-            houseContainer.textContent = 'Go back to the Great Hall and finish taking the quiz!';
+            houseContainer.textContent = answers[1].e;
         }
 
         if(userObj.patronus === 'a'){
-            patronusContainer.textContent = 'Ragdoll Cat';
+            patronusContainer.textContent = answers[2].a;
         } else if(userObj.patronus === 'b') {
-            patronusContainer.textContent = 'Basset Hound';
+            patronusContainer.textContent = answers[2].b;
         } else if(userObj.patronus === 'c') {
-            patronusContainer.textContent = 'Aardvark';
+            patronusContainer.textContent = answers[2].c;
         } else if(userObj.patronus === 'd') {
-            patronusContainer.textContent = 'Thestral';
+            patronusContainer.textContent = answers[2].d;
         } else {
-            patronusContainer.textContent = 'Go back to Defense Against the Dark Arts class and finish taking the quiz!';
+            patronusContainer.textContent = answers[2].e;
         }
 
         if(userObj.career === 'a'){
-            careerContainer.textContent = 'Auror';
+            careerContainer.textContent = answers[3].a;
         } else if(userObj.career === 'b') {
-            careerContainer.textContent = 'Professor';
+            careerContainer.textContent = answers[3].b;
         } else if(userObj.career === 'c') {
-            careerContainer.textContent = 'Writer for the Daily Prophet';
+            careerContainer.textContent = answers[3].c;
         } else if(userObj.career === 'd') {
-            careerContainer.textContent = 'Minister of Magic';
+            careerContainer.textContent = answers[3].d;
         } else {
-            careerContainer.textContent = 'Go back to Hogwarts and finish taking the quiz!';
+            careerContainer.textContent = answers[3].e;
         }
 
         const button = dom.querySelector('button');
