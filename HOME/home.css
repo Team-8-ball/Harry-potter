@@ -5,10 +5,9 @@
 
 
 body {
-background-image: url("../ASSETS/background-login.jpg");
+background: url("../ASSETS/background-login.jpg") no-repeat center center fixed;
 background-repeat: no-repeat;
 background-size: cover;
-
 }
 
 
