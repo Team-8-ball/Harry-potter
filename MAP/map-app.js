@@ -13,7 +13,7 @@ function makeTemplate() {
             <a href="../END-STORY/end-story.html" id="map-door" ><img src="../assets/fancier-door.png" alt="A Secret Door - Your Future?"></a>
         </div>
         `;
-    }
+}
     
     // <a href="../HOME/home.html">Home</a>
 
