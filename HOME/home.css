@@ -6,7 +6,6 @@
 
 body {
 background: url("../ASSETS/background-login.jpg") no-repeat center center fixed;
-background-repeat: no-repeat;
 background-size: cover;
 }
 
@@ -25,7 +24,7 @@ label{
 #input-section {
     padding-top: 10px;
 }
-#root {
+/* #root {
     color: black;
     background: rgba(255, 255, 255, 0.8);
     position: absolute;
@@ -33,5 +32,5 @@ label{
     width: 450px;
     margin: -100px 0 0 -200px;
     top: 50%;
-    left: 50%;
-}
+    left: 50%; */
+/* } */
