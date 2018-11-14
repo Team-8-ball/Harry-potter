@@ -9,6 +9,7 @@ var userObj = apiData[0];
 
 function makeTemplate() {
     return html`
+    <h1>${userObj.name}, here is your magical story...</h1>
     <div id="wand-response">
         Diagon Alley or Knocturn Alley? Whatever your pick, 
         you need a wand before you head off for school. 
@@ -28,81 +29,103 @@ function makeTemplate() {
         <span id="career"></span>
     </div>
     <div id="the-end-response">
+        What a journey you've had! Definitely one for the wizarding books! 
+        However, everyone meets their demise. 
         <span id="the-end"></span>
     </div>
     <div id="return-home">
         <button id="play-again">Play Again!</button>
+        <a href="../ABOUT-US/about-us.html"><img src="../ASSETS/icon_7729.png" alt="Go to our about us page!"></a>
+    </div>
+    <p>Click Harry to learn about us!</p>
+    `;
+}
+
+function makeTemplate2() {
+    return html`
+    <div>You have to play the game to get your results!</div>
+    <div id="return-home">
+        <button id="return-home">Return Home</button>
     </div>
     `;
 }
 
 export default class DisplayText{
-    
     render() {
-        const dom = makeTemplate();
-        const wandContainer = dom.querySelector('#wand');
-        const houseContainer = dom.querySelector('#house');
-        const patronusContainer = dom.querySelector('#patronus');
-        const careerContainer = dom.querySelector('#career');
-
-        if(userObj.wand === 'a'){
-            wandContainer.textContent = answers[0].a;
-        } else if(userObj.wand === 'b') {
-            wandContainer.textContent = answers[0].b;
-        } else if(userObj.wand === 'c') {
-            wandContainer.textContent = answers[0].c;
-        } else if(userObj.wand === 'd') {
-            wandContainer.textContent = answers[0].d;
-        } else {
-            wandContainer.textContent = answers[0].e;
+        if(!userObj){
+            console.log(!userObj);
+            const dom = makeTemplate2();
+            const button = dom.querySelector('button');
+            button.addEventListener('click', () => {
+                window.location = '../index.html';
+            });
+            return dom;
         }
-
-        if(userObj.house === 'a'){
-            houseContainer.textContent = answers[1].a;
-        } else if(userObj.house === 'b') {
-            houseContainer.textContent = answers[1].b;
-        } else if(userObj.house === 'c') {
-            houseContainer.textContent = answers[1].c;
-        } else if(userObj.house === 'd') {
-            houseContainer.textContent = answers[1].d;
-        } else {
-            houseContainer.textContent = answers[1].e;
+        else {
+            const dom = makeTemplate();
+            const wandContainer = dom.querySelector('#wand');
+            const houseContainer = dom.querySelector('#house');
+            const patronusContainer = dom.querySelector('#patronus');
+            const careerContainer = dom.querySelector('#career');
+    
+            if(userObj.wand === 'a'){
+                wandContainer.textContent = answers[0].a;
+            } else if(userObj.wand === 'b') {
+                wandContainer.textContent = answers[0].b;
+            } else if(userObj.wand === 'c') {
+                wandContainer.textContent = answers[0].c;
+            } else if(userObj.wand === 'd') {
+                wandContainer.textContent = answers[0].d;
+            } else {
+                wandContainer.textContent = answers[0].e;
+            }
+    
+            if(userObj.house === 'a'){
+                houseContainer.textContent = answers[1].a;
+            } else if(userObj.house === 'b') {
+                houseContainer.textContent = answers[1].b;
+            } else if(userObj.house === 'c') {
+                houseContainer.textContent = answers[1].c;
+            } else if(userObj.house === 'd') {
+                houseContainer.textContent = answers[1].d;
+            } else {
+                houseContainer.textContent = answers[1].e;
+            }
+    
+            if(userObj.patronus === 'a'){
+                patronusContainer.textContent = answers[2].a;
+            } else if(userObj.patronus === 'b') {
+                patronusContainer.textContent = answers[2].b;
+            } else if(userObj.patronus === 'c') {
+                patronusContainer.textContent = answers[2].c;
+            } else if(userObj.patronus === 'd') {
+                patronusContainer.textContent = answers[2].d;
+            } else {
+                patronusContainer.textContent = answers[2].e;
+            }
+    
+            if(userObj.career === 'a'){
+                careerContainer.textContent = answers[3].a;
+            } else if(userObj.career === 'b') {
+                careerContainer.textContent = answers[3].b;
+            } else if(userObj.career === 'c') {
+                careerContainer.textContent = answers[3].c;
+            } else if(userObj.career === 'd') {
+                careerContainer.textContent = answers[3].d;
+            } else {
+                careerContainer.textContent = answers[3].e;
+            }
+    
+            const button = dom.querySelector('button');
+            button.addEventListener('click', () => {
+                localStorage.clear();
+                window.location = '../index.html';
+            });
+            const magicEnd = new MagicEnd();
+            const endContainer = dom.querySelector('#the-end');
+            endContainer.appendChild(magicEnd.render());
+            
+            return dom;
         }
-
-        if(userObj.patronus === 'a'){
-            patronusContainer.textContent = answers[2].a;
-        } else if(userObj.patronus === 'b') {
-            patronusContainer.textContent = answers[2].b;
-        } else if(userObj.patronus === 'c') {
-            patronusContainer.textContent = answers[2].c;
-        } else if(userObj.patronus === 'd') {
-            patronusContainer.textContent = answers[2].d;
-        } else {
-            patronusContainer.textContent = answers[2].e;
-        }
-
-        if(userObj.career === 'a'){
-            careerContainer.textContent = answers[3].a;
-        } else if(userObj.career === 'b') {
-            careerContainer.textContent = answers[3].b;
-        } else if(userObj.career === 'c') {
-            careerContainer.textContent = answers[3].c;
-        } else if(userObj.career === 'd') {
-            careerContainer.textContent = answers[3].d;
-        } else {
-            careerContainer.textContent = answers[3].e;
-        }
-
-        const button = dom.querySelector('button');
-        button.addEventListener('click', () => {
-            localStorage.clear();
-            window.location = '../index.html';
-        });
-
-        const magicEnd = new MagicEnd();
-        const endContainer = dom.querySelector('#the-end');
-        endContainer.appendChild(magicEnd.render());
-
-        return dom;
     }
 }
