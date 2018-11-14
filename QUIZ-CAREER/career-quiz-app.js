@@ -11,22 +11,22 @@ function makeTemplate() {
     <form id="career-quiz">
         <label for="choice-a">
             <input type="radio" id="choice-a" name="career" value="a">
-            A. Defending muggles against the Dark Arts.
+            A. After what happened to the Potter family, I have to protect the muggles.
         </label>
     
         <label for="choice-b">
             <input type="radio" id="choice-b" name="career" value="b">
-            B. Share my knowledge with the youth of tomorrow.
+            B. Share my interest of the complexity and depth of wizardry with the world!
         </label>
     
         <label for="choice-c">
             <input type="radio" id="choice-c" name="career" value="c">
-            C. Journalism
+            C. The world is large and the night full of terrors. I want to know EVERYTHING that other people are doing in the scene!
         </label>
     
         <label for="choice-d">
             <input type="radio" id="choice-d" name="career" value="d">
-            D. Politics
+            D. Being a wizard is great and all but the real magic happens in the democratic process. 
         </label>
     </form>
     </div>
