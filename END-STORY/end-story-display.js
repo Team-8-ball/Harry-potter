@@ -10,12 +10,16 @@ var userObj = apiData[0];
 function makeTemplate() {
     return html`
     <div id="wand-response">
+        Diagon Alley or Knocturn Alley? Whatever your pick, 
+        you need a wand before you head off for school. 
+        Remember, the wand chooses the witch or wizard! 
         <span id="wand"></span>
     </div>
     <div id="house-response">
-        Filler text.
+        At the Sorting Hat Ceremony, you are difficult to place.
+        "I see great promise in you," says the hat. 
+        "But where to put you..." You hold your breath and then...
         <span id="house"></span>
-        Filler text.
     </div>
     <div id="patronus-response">
         <span id="patronus"></span>
