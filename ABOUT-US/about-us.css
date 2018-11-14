@@ -1,28 +1,67 @@
 @font-face {
     font-family: parryHotter;
-    src: url(ParryHotter.ttf);
+    src: url(../ParryHotter.ttf);
 }
 
 body {
-    background: coral;
+    background: url("../ASSETS/book-background.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
-h1 {
-    font-family: parryHotter;
-    text-align: center;
-    font-size: 60px;
+img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50px;
 }
-.about-us {
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
+
+#us {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: repeat(3, 33vh);
+    max-width: 100%;
+    max-height: auto;
 }
 
 .person {
-    margin: auto;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    max-width: 750px;
+    max-height: 175px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+#cheri {
+    grid-column-start: 2;
+    grid-row-start: 3;
 
 }
-img {
-    width: 200px;
 
+#paige {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
 }
+
+#lance {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    display: flex;
+}
+
+header {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    font-family: parryHotter;
+    text-align: center;
+    font-size: 45px;
+}
+/* .about-us {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+} */
+
+
