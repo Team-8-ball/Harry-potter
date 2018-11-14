@@ -3,6 +3,11 @@
     src: url(../ParryHotter.ttf);
 }
 
+p {
+    font-family: Bookman;
+    font-size: 24px; 
+}
+
 body {
     background: url("../ASSETS/book-background.jpg") no-repeat center center fixed;
     background-size: cover;
@@ -58,10 +63,3 @@ header {
     text-align: center;
     font-size: 45px;
 }
-/* .about-us {
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-} */
-
-
