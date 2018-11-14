@@ -36,6 +36,7 @@ export default class PatronusApp {
         
         const dom = makeTemplate();
         let form = dom.querySelector('form');
+        console.log('dom', 'form', dom, form);
         const elements = form.elements;
         form.addEventListener('change', () => {
             event.preventDefault();
