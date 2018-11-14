@@ -41,19 +41,33 @@ function makeTemplate() {
     `;
 }
 
-export default class DisplayText{
-    
-    render() {
-        const dom = makeTemplate();
-        const wandContainer = dom.querySelector('#wand');
-        const houseContainer = dom.querySelector('#house');
-        const patronusContainer = dom.querySelector('#patronus');
-        const careerContainer = dom.querySelector('#career');
+function makeTemplate2() {
+    return html`
+    <div>You have to play the game to get your results!</div>
+    <div id="return-home">
+        <button id="return-home">Return Home</button>
+    </div>
+    `;
+}
 
-        if(userObj.name === undefined){
-            wandContainer.textContent = 'You have to play the game to get your results!';
+export default class DisplayText{
+    render() {
+        if(!userObj){
+            console.log(!userObj);
+            const dom = makeTemplate2();
+            const button = dom.querySelector('button');
+            button.addEventListener('click', () => {
+                window.location = '../index.html';
+            });
+            return dom;
         }
-        else{
+        else {
+            const dom = makeTemplate();
+            const wandContainer = dom.querySelector('#wand');
+            const houseContainer = dom.querySelector('#house');
+            const patronusContainer = dom.querySelector('#patronus');
+            const careerContainer = dom.querySelector('#career');
+    
             if(userObj.wand === 'a'){
                 wandContainer.textContent = answers[0].a;
             } else if(userObj.wand === 'b') {
@@ -101,18 +115,17 @@ export default class DisplayText{
             } else {
                 careerContainer.textContent = answers[3].e;
             }
+    
+            const button = dom.querySelector('button');
+            button.addEventListener('click', () => {
+                localStorage.clear();
+                window.location = '../index.html';
+            });
+            const magicEnd = new MagicEnd();
+            const endContainer = dom.querySelector('#the-end');
+            endContainer.appendChild(magicEnd.render());
+            
+            return dom;
         }
-
-        const button = dom.querySelector('button');
-        button.addEventListener('click', () => {
-            localStorage.clear();
-            window.location = '../index.html';
-        });
-
-        const magicEnd = new MagicEnd();
-        const endContainer = dom.querySelector('#the-end');
-        endContainer.appendChild(magicEnd.render());
-
-        return dom;
     }
 }
