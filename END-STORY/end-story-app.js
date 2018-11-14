@@ -3,7 +3,7 @@ import DisplayText from './end-story-display.js';
 
 function makeTemplate() {
     return html`
-        <h1>Read your magical story!<h1>
+        <h1>Your wizarding world story...</h1>
         <div id="end-story"></div>
     `;
 }
