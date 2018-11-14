@@ -1,4 +1,4 @@
-import html from '../html.js';
+import html from './html.js';
 import InputName from './home-input.js';
 
 
