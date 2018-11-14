@@ -1,18 +1,18 @@
 import html from '../html.js';
 
 const magicDeaths = [
-    'And in the end, you were eaten by a hippogriff.',
-    'And in the end, you got lost in the Floo Network.',
-    'And in the end, you were killed by a kiss of death from a dementor.',
-    'And in the end, you were smacked in the face by a snitch.',
-    'And in the end, you fell off your broom during a Quidditch match.',
-    'And in the end, you looked in the eye of a basilisk.',
-    'And in the end, you were sent to Azkaban for murder. Avada Kedavra!'
+    'In the end, you were eaten by a hippogriff.',
+    'In the end, you got lost in the Floo Network.',
+    'In the end, you were killed by a kiss of death from a dementor.',
+    'In the end, you were smacked in the face by a snitch.',
+    'In the end, you fell off your broom during a Quidditch match.',
+    'In the end, you looked in the eye of a basilisk.',
+    'In the end, you were sent to Azkaban for murder. Avada Kedavra!'
 ];
 
 function makeTemplate() {
     return html`
-    <p id="death-time"></p>
+    <span id="death-time"></span>
     `;
 }
 

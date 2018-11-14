@@ -27,7 +27,7 @@ export default class InputName {
         form.addEventListener('submit', event => {
             event.preventDefault();
   
-
+            
             const user = {
                 name: elements.name.value,
             };
