@@ -14,8 +14,6 @@ function makeTemplate() {
         </div>
         `;
 }
-    
-    // <a href="../HOME/home.html">Home</a>
 
 
 export default class App {
@@ -31,9 +29,6 @@ export default class App {
         let wand = dom.querySelector('#map-wand');
         let career = dom.querySelector('#map-career');
 
-
-
-        console.log('xyz', this.user);
         if(this.user.house) {
             house.classList.add('hidden');
         }
