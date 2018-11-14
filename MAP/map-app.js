@@ -6,11 +6,11 @@ let user = resultsApi.getAll();
 function makeTemplate() {
     return html`
         <div id="quiz-icon">
-            <a href="../QUIZ-HOUSE/house-quiz.html" id="map-house"><img src="../assets/Hogwarts-Logo-PNG-Transparent.png" alt="Hogwarts Crest"></a>
-            <a href="../QUIZ-PATRONUS/patronus-quiz.html" id="map-patronus" ><img src="../assets/group-patronus.jpg" alt="Group of Patronus"></a>
-            <a href="../QUIZ-WAND/wand-quiz.html" id="map-wand"><img  src="../assets/Three-wands.png" alt="a trio of wands"></a>
-            <a href="../QUIZ-CAREER/career-quiz.html" id="map-career"><img  src="../assets/ministry-magic.png" alt="Ministry of Magic Seal"></a>
-            <a href="../END-STORY/end-story.html" id="map-door" ><img src="../assets/fancier-door.png" alt="A Secret Door - Your Future?"></a>
+            <a href="../QUIZ-HOUSE/house-quiz.html" id="map-house"><img src="../ASSETS/Hogwarts-Logo-PNG-Transparent.png" alt="Hogwarts Crest"></a>
+            <a href="../QUIZ-PATRONUS/patronus-quiz.html" id="map-patronus" ><img src="../ASSETS/group-patronus.jpg" alt="Group of Patronus"></a>
+            <a href="../QUIZ-WAND/wand-quiz.html" id="map-wand"><img  src="../ASSETS/Three-wands.png" alt="a trio of wands"></a>
+            <a href="../QUIZ-CAREER/career-quiz.html" id="map-career"><img  src="../ASSETS/ministry-magic.png" alt="Ministry of Magic Seal"></a>
+            <a href="../END-STORY/end-story.html" id="map-door" ><img src="../ASSETS/fancier-door.png" alt="A Secret Door - Your Future?"></a>
         </div>
         `;
 }
