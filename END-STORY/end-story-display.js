@@ -9,41 +9,41 @@ var userObj = apiData[0];
 
 function makeTemplate() {
     return html`
-    <h1>${userObj.name}, here is your magical story...</h1>
-    <div id="wand-response">
-        Diagon Alley or Knocturn Alley? Whatever your pick, 
-        you need a wand before you head off for school. 
-        Remember, the wand chooses the witch or wizard! 
-        <span id="wand"></span>
-    </div>
-    <div id="house-response">
-        At the Sorting Hat Ceremony, you were difficult to place.
-        "I see great promise in you," said the hat. 
-        "But where to put you..." You held your breath and then...
-        <span id="house"></span>
-    </div>
-    <div id="patronus-response">
-        Only the best witches and wizards manage to cast a Patronus, 
-        but you're exceptional! That last encounter with Fluffy helped 
-        you along. 
-        <span id="patronus"></span>
-    </div>
-    <div id="career-response">
-        <span id="career"></span>
-    </div>
-    <div id="quidditch-response">
-        <span id="quidditch"></span>
-    </div>
-    <div id="the-end-response">
-        What a journey you've had! Definitely one for the wizarding books! 
-        However, everyone meets their demise. 
-        <span id="the-end"></span>
-    </div>
-    <div id="return-home">
-        <button id="play-again">Play Again!</button>
-        <a href="../ABOUT-US/about-us.html"><img src="../ASSETS/icon_7729.png" alt="Go to our about us page!"></a>
-    </div>
-    <p>Click Harry to learn about us!</p>
+        <h1>${userObj.name}, here is your magical story...</h1>
+        <div id="wand-response">
+            Diagon Alley or Knocturn Alley? Whatever your pick, 
+            you need a wand before you head off for school. 
+            Remember, the wand chooses the witch or wizard! 
+            <span id="wand"></span>
+        </div>
+        <div id="house-response">
+            At the Sorting Hat Ceremony, you were difficult to place.
+            "I see great promise in you," said the hat. 
+            "But where to put you..." You held your breath and then...
+            <span id="house"></span>
+        </div>
+        <div id="patronus-response">
+            Only the best witches and wizards manage to cast a Patronus, 
+            but you're exceptional! That last encounter with Fluffy helped 
+            you along. 
+            <span id="patronus"></span>
+        </div>
+        <div id="career-response">
+            <span id="career"></span>
+        </div>
+        <div id="quidditch-response">
+            <span id="quidditch"></span>
+        </div>
+        <div id="the-end-response">
+            What a journey you've had! Definitely one for the wizarding books! 
+            However, everyone meets their demise. 
+            <span id="the-end"></span>
+        </div>
+        <div id="return-home">
+            <button id="play-again">Play Again!</button>
+            <a href="../ABOUT-US/about-us.html"><img src="../ASSETS/icon_7729.png" alt="Go to our about us page!"></a>
+        </div>
+        <p>Click Harry to learn about us!</p>
     `;
 }
 

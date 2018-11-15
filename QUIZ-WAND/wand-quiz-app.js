@@ -35,22 +35,19 @@ function makeTemplate() {
 
 export default class WandApp {
     render() {
-        var api = resultsApi;
         const dom = makeTemplate();
-        let form = dom.querySelector('form');
+        
+        const api = resultsApi;
+        const form = dom.querySelector('form');
         const elements = form.elements;
         
-        
         form.addEventListener('change', () => {
-            var getApi = resultsApi.getAll();
+            const getApi = resultsApi.getAll();
             window.location = '../MAP/map.html';
             getApi[0].wand = elements.wand.value;
-            console.log('this is the clicked choice', getApi[0].wand);
-
             api.saveResults();
         });
-
+        
         return dom;
     }
-
 }
