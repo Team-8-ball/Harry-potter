@@ -17,9 +17,9 @@ function makeTemplate() {
         <span id="wand"></span>
     </div>
     <div id="house-response">
-        At the Sorting Hat Ceremony, you are difficult to place.
-        "I see great promise in you," says the hat. 
-        "But where to put you..." You hold your breath and then...
+        At the Sorting Hat Ceremony, you were difficult to place.
+        "I see great promise in you," said the hat. 
+        "But where to put you..." You held your breath and then...
         <span id="house"></span>
     </div>
     <div id="patronus-response">
