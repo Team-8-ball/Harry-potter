@@ -4,30 +4,31 @@ import resultsApi from '../result-api.js';
 function makeTemplate() {
     return html`
     <div class="question">
-        <h3>You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass.</h3>
-        <p>Which sounds most like you?</p>
+        <h3>"Rough game, Quidditch."<br>
+        "Brutal, but no one's died in years."</h3>
+        <p>What are you willing to sacrifice for house&#8217s glory?</p>
     </div>
 
     <div class="choices">
     <form id="quidditch-quiz">
         <label for="choice-a">
             <input type="radio" id="choice-a" name="quidditch" value="a" required>
-            A. I volunteer to fight!
+            A. Uhhhh..... I&#8217m really just here to say I tried out. You know, for the the popularity gains. 
         </label>
 
         <label for="choice-b">
             <input type="radio" id="choice-b" name="quidditch" value="b" required>
-            B. I attempt to confuse the troll into letting all three of us to pass without fighting.
+            B. PUT ME IN COACH. I&#8217m nimble, quick and have god like eyesight.
         </label>
 
         <label for="choice-c">
             <input type="radio" id="choice-c" name="quidditch" value="c" required>
-            C. Sacrifice one of my friends for the good of the rest.
+            C. Honestly, I don&#8217d care about winning. I just want to knock people off their brooms. 
         </label>
     
         <label for="choice-d">
             <input type="radio" id="choice-d" name="quidditch" value="d" required>
-            D. Rock, paper, scissors.
+            D. All or nothing. I&#8217v got dreams of playing quidditch professionally.   
         </label>
     </form>
     </div>

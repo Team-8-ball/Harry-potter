@@ -22,10 +22,18 @@ const answers = [{
 {
     a: 'Your noble commitment to serving the world does not go unnoticed. You would make a perfect Auror! While the muggles may never know what you do, we will.',
     b: 'Teaching the history of magic as a Professor would fit you nicely.',
-    c: 'Loving juicy gossip is a talent in its own right. Becoming a journalist for the Daily Prophet seems fitting.',
+    c: 'Your nack for unsolicited nosiness and loving juicy gossip is a talent in its own right. Being a journalist for the Daily Prophet seems fitting.',
     d: 'A little boring but without a doubt, it is the Minister of Magic for you young wizard.',
     e: 'Go back to Hogwarts and finish taking the quiz!'
-}];
+},
+{
+    a:'There is not easy way out in life. Much less in quidditch. Becoming a Seeker should teach you a few valuable life lessons. As a Seeker you be arguably the most important member of your team. Don`t let them down.',
+    b:'The enthusiasm is a much needed change of pace .You would be exhilarating to watch as a Chaser. Being a Chaser makes you the foundations of the quidditch. The sport thanks you.',
+    c:'Without doubt, your house needs you are as a Beater. Willingness to inflict physical pain on the competing team is a trait in high demand. Congrats bucko.',
+    d: 'Your passion for the most revered sport in wizard history is noted. But.....but you didn`t make the team. Sorry kid.',
+    e: 'Tryouts aren`t over! Go back the field and finish what you`ve started'
+}
+];
 
 
 
