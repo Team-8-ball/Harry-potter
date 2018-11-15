@@ -4,9 +4,8 @@ import CastName from './goblet-button.js';
 function makeTemplate() {
     return html `
         <div id="root"> </div>
-        <button id="button">Cast Your Name!</button>
-        
-        <a href="../ABOUT-US/about-us.html" id=back-button><button>Text</button></a>
+        <button id="cast-name">Cast Your Name!</button>
+         
         `;
 }
 
