@@ -11,16 +11,47 @@ background-size: cover;
 
 div {
     text-align: center;
+    
 
 }
 h1 {
     font-family: parryHotter;
-    font-size: 60px;
-}
-label{
-    font-size: 20px;
+    font-size: 70px;
 }
 #input-section {
+    margin: 25% auto ;
     padding-top: 10px;
+    font-size: 18px;
+    color: black;
+    background: rgba(255, 255, 255, 0.6);
+    min-height: 100px;
+    max-height: 30px;
+    width: 500px;
+    padding: 10px;
 }
+
+button {
+    margin: 30px;
+    height: 50px;
+    font-size: 20px;
+    font-family: serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.6);
+
+}
+
+ input {
+    background-color:rgba(0, 0, 0, 0);
+    color:white;
+    border: none;
+    outline:none;
+    height:30px;
+    transition:height 1s;
+    -webkit-transition:height 1s;
+    width: 300px;
+    height: 50px;
+    font-size: 40px;
+}
+
 
