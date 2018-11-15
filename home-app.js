@@ -6,12 +6,10 @@ function makeTemplate() {
     return html` 
         <h1> Are you a Wizard? </h1>
         <div id="input-section"> </div>
-
     `;
 }
 
 export default class App {
-
 
     render() {
         const dom = makeTemplate();

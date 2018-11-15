@@ -5,12 +5,9 @@ function makeTemplate() {
     return html `
     <span> 
         <form class="sign-in"> 
-        <p>
-        <label for="name"></label>
-        </p>
-        <input name="name" id="name" placeholder="Muggle Name">
-        <button> Start!</button>
-
+            <p><label for="name"></label></p>
+            <input name="name" id="name" placeholder="Muggle Name">
+            <button> Start!</button>
         </form>
     </span>
     `;

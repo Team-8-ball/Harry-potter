@@ -8,18 +8,16 @@ background: url("../ASSETS/background-login.jpg") no-repeat center center fixed;
 background-size: cover;
 }
 
-
 div {
     text-align: center;
-    
-
 }
+
 h1 {
     font-family: parryHotter;
     font-size: 70px;
 }
 #input-section {
-    margin: 25% auto ;
+    margin: auto ;
     padding-top: 10px;
     font-size: 18px;
     color: black;
