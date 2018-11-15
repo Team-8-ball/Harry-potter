@@ -1,0 +1,27 @@
+html {
+    background: url('../ASSETS/the-great-hall.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#root {
+    color: black;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    height: 250px;
+    width: 450px;
+    margin: -100px 0 0 -200px;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#house-quiz {
+    display: flex;
+    justify-content: space-around;
+    
+}
