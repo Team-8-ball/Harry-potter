@@ -12,6 +12,7 @@ function makeTemplate() {
             <a href="../QUIZ-CAREER/career-quiz.html" id="map-career"><img  src="../ASSETS/ministry-magic.png" alt="Ministry of Magic Seal"></a>
             <a href="../END-STORY/end-story.html" id="map-door"><img src="../ASSETS/fancier-door.png" alt="A Secret Door - Your Future?"></a>
             <a href="../QUIZ-QUIDDITCH/quidditch-quiz.html" id="map-snitch"><img src="../ASSETS/kisspng-snitch.png" alt="the Goblet of Fire"></a>
+            <p id="instructions"> Some stuff about the stuff </p>
         </div>
         `;
 }
@@ -29,8 +30,18 @@ export default class App {
         let wand = dom.querySelector('#map-wand');
         let career = dom.querySelector('#map-career');
         let door = dom.querySelector('#map-door');
-        let snitch = dom.querySelector('#map-snitch');
+        let quidditch = dom.querySelector('#map-snitch');
+        let instructions = dom.querySelector('#instructions');
         door.classList.add('hidden');
+        
+        // if(this.user.hasOwnProperty(house || patronus || wand || career || quidditch)){
+        //     house.classList.add('hidden');
+        //     patronus.classList.add('hidden');
+        //     wand.classList.add('hidden');
+        //     career.classList.add('hidden');
+        //     quidditch.classList.add('hidden');
+
+        // }
 
         if(this.user.house) {
             house.classList.add('hidden');
@@ -45,10 +56,11 @@ export default class App {
             career.classList.add('hidden');
         }
         if(this.user.quidditch) {
-            snitch.classList.add('hidden');
+            quidditch.classList.add('hidden');
         }
         if(this.user.career && this.user.wand && this.user.house && this.user.patronus && this.user.quidditch) { 
             door.classList.remove('hidden'); 
+            instructions.classList.add('hidden');
 
         }
 
