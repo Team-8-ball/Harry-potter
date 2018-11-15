@@ -33,15 +33,6 @@ export default class App {
         let quidditch = dom.querySelector('#map-snitch');
         let instructions = dom.querySelector('#instructions');
         door.classList.add('hidden');
-        
-        // if(this.user.hasOwnProperty(house || patronus || wand || career || quidditch)){
-        //     house.classList.add('hidden');
-        //     patronus.classList.add('hidden');
-        //     wand.classList.add('hidden');
-        //     career.classList.add('hidden');
-        //     quidditch.classList.add('hidden');
-
-        // }
 
         if(this.user.house) {
             house.classList.add('hidden');

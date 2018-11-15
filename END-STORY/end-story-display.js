@@ -56,6 +56,22 @@ function makeTemplate2() {
     `;
 }
 
+function doSomething(userObj, objectContainer, num) {
+    if(userObj === 'a'){
+        objectContainer.textContent = answers[num].a;
+    } else if(userObj === 'b') {
+        objectContainer.textContent = answers[num].b;
+    } 
+    else if(userObj === 'c') {
+        objectContainer.textContent = answers[num].c;
+    } else if(userObj === 'd') {
+        objectContainer.textContent = answers[num].d;
+    } else {
+        objectContainer.textContent = answers[num].e;
+    }
+}
+
+
 export default class DisplayText{
     render() {
         if(!userObj){
@@ -74,65 +90,13 @@ export default class DisplayText{
             const patronusContainer = dom.querySelector('#patronus');
             const careerContainer = dom.querySelector('#career');
             const quidditchContainer = dom.querySelector('#quidditch');
-    
-            if(userObj.wand === 'a'){
-                wandContainer.textContent = answers[0].a;
-            } else if(userObj.wand === 'b') {
-                wandContainer.textContent = answers[0].b;
-            } else if(userObj.wand === 'c') {
-                wandContainer.textContent = answers[0].c;
-            } else if(userObj.wand === 'd') {
-                wandContainer.textContent = answers[0].d;
-            } else {
-                wandContainer.textContent = answers[0].e;
-            }
-    
-            if(userObj.house === 'a'){
-                houseContainer.textContent = answers[1].a;
-            } else if(userObj.house === 'b') {
-                houseContainer.textContent = answers[1].b;
-            } else if(userObj.house === 'c') {
-                houseContainer.textContent = answers[1].c;
-            } else if(userObj.house === 'd') {
-                houseContainer.textContent = answers[1].d;
-            } else {
-                houseContainer.textContent = answers[1].e;
-            }
-    
-            if(userObj.patronus === 'a'){
-                patronusContainer.textContent = answers[2].a;
-            } else if(userObj.patronus === 'b') {
-                patronusContainer.textContent = answers[2].b;
-            } else if(userObj.patronus === 'c') {
-                patronusContainer.textContent = answers[2].c;
-            } else if(userObj.patronus === 'd') {
-                patronusContainer.textContent = answers[2].d;
-            } else {
-                patronusContainer.textContent = answers[2].e;
-            }
-    
-            if(userObj.career === 'a'){
-                careerContainer.textContent = answers[3].a;
-            } else if(userObj.career === 'b') {
-                careerContainer.textContent = answers[3].b;
-            } else if(userObj.career === 'c') {
-                careerContainer.textContent = answers[3].c;
-            } else if(userObj.career === 'd') {
-                careerContainer.textContent = answers[3].d;
-            } else {
-                careerContainer.textContent = answers[3].e;
-            }
-            if(userObj.quidditch === 'a'){
-                quidditchContainer.textContent = answers[4].a;
-            } else if(userObj.quidditch === 'b') {
-                quidditchContainer.textContent = answers[4].b;
-            } else if(userObj.quidditch === 'c') {
-                quidditchContainer.textContent = answers[4].c;
-            } else if(userObj.quidditch === 'd') {
-                quidditchContainer.textContent = answers[4].d;
-            } else {
-                quidditchContainer.textContent = answers[4].e;
-            }
+
+            doSomething(userObj.wand, wandContainer, 0);
+            doSomething(userObj.house, houseContainer, 1);
+            doSomething(userObj.patronus, patronusContainer, 2);
+            doSomething(userObj.career, careerContainer, 3);
+            doSomething(userObj.quidditch, quidditchContainer, 4);
+
     
             const button = dom.querySelector('button');
             button.addEventListener('click', () => {
