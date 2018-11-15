@@ -8,7 +8,6 @@ function makeTemplate() {
     `;
 }
 
-
 export default class Goblet {
 
     render() {
@@ -23,11 +22,8 @@ export default class Goblet {
             textContainer.appendChild(castButton.render());
             castName.classList.add('hidden');
         
-
         });
-
 
         return dom;
     }
-
 }

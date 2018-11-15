@@ -1,3 +1,8 @@
+@font-face {
+    font-family: parryHotter;
+    src: url(../ParryHotter.ttf);
+}
+
 html {
     background: url('../ASSETS/cup2.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -5,12 +10,16 @@ html {
 
 h1 {
     color: white;
-    position: relative;
-    font-size: 50px;
-    top: 20px;
-    left: 350px;
-
+    font-size: 48px;
+    top: 10px;
+    font-family: parryHotter;
+    text-align: center;
 }
+
+#text-section {
+    margin: auto;
+}
+
 button {
     position: relative;
     top: 580px;
@@ -32,11 +41,11 @@ button {
 }
 
 #fire {
-    position: relative;
+    /* position: relative; */
     top: 60px;
     left: 590px;
     background: url('../ASSETS/fire-cup.gif') no-repeat center center fixed;
     max-width: 200px;
     height: 300px;
-
+    margin: auto;
 }
