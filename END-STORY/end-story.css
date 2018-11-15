@@ -2,7 +2,7 @@ html {
     background: url('../ASSETS/end-story-bkgrnd.jpg') no-repeat center center fixed;
     background-size: cover;
 }
-body{
+body {
     cursor: url('../ASSETS/footprints-icon-8.cur'), auto;
 }
 
@@ -56,12 +56,12 @@ button {
 
 }
 
-p{
+p {
     text-align: right;
     padding: 0px 10px;
 }
 
-img{
+img {
     width: 100px;
     
 }

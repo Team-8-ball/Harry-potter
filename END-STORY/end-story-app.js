@@ -1,9 +1,5 @@
 import html from '../html.js';
 import DisplayText from './end-story-display.js';
-// import resultsApi from '../result-api.js';
-
-// var apiData = resultsApi.getAll();
-// var userObj = apiData[0];
 
 function makeTemplate() {
     return html`
