@@ -12,7 +12,7 @@ function makeTemplate() {
             <a href="../QUIZ-CAREER/career-quiz.html" id="map-career"><img  src="../ASSETS/ministry-magic.png" alt="Ministry of Magic Seal"></a>
             <a href="../END-STORY/end-story.html" id="map-door"><img src="../ASSETS/fancier-door.png" alt="A Secret Door - Your Future?"></a>
             <a href="../QUIZ-QUIDDITCH/quidditch-quiz.html" id="map-snitch"><img src="../ASSETS/kisspng-snitch.png" alt="the Goblet of Fire"></a>
-            <p id="instructions"> Some stuff about the stuff </p>
+            <p id="instructions">Choose your path. Will you find the hidden door?</p>
         </div>
         `;
 }
