@@ -4,8 +4,8 @@ import resultsApi from '../result-api.js';
 function makeTemplate() {
     return html`
     <div class="question">
-        <h3>"Rough game, Quidditch."<br>
-        "Brutal, but no one's died in years."</h3>
+        <h2>"Rough game, Quidditch."<br>
+        "Brutal, but no one's died in years."</h2>
         <p>What are you willing to sacrifice for house&#8217s glory?</p>
     </div>
 

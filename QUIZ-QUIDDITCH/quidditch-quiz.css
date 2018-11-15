@@ -1,6 +1,13 @@
 html {
     background: url('../ASSETS/quidditch.jpg') no-repeat center center fixed;
     background-size: cover;
+    font-family: Bookman;
+}
+
+h2 {
+    
+    font-weight: bold;
+    font-size: 22px;
 }
 
 #root {
@@ -13,8 +20,15 @@ html {
     padding: 30px;
 }
 
-label {
+p {
+    
+    font-weight: bold;
     font-size: 18px;
+}
+
+label {
+    
+    font-size: 20px;
     text-indent: -2em;
     margin: 20px;
 }

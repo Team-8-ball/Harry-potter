@@ -23,7 +23,8 @@ p {
 }
 
 label {
-    font-size: 18px;
+    font-family: Bookman;
+    font-size: 20px;
     text-indent: -2em;
     margin: 20px;
 }
