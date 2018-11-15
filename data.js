@@ -14,9 +14,9 @@ const answers = [{
 },
 {
     a: 'You love to joke around, but you never forget your manners. Your Patronus is a Ragdoll Cat! Meow!',
-    b: 'You have brains and determination. Some may call you stubborn. Your Patornus is a Basset Hound. Woof!',
+    b: 'You have brains and determination. Some may call you stubborn. Your Patronus is a Basset Hound. Woof!',
     c: 'When you cast your Patronus, an Aardvark appears. Independence, self-confidence, and hard work are your rules.',
-    d: 'You have seen, and know understand, death. Your Patronus is a Thestral, who is, despite appearances, gentle and kind.',
+    d: 'You have seen, and now understand, death. Your Patronus is a Thestral, who is, despite appearances, gentle and kind.',
     e: 'Go back to Defense Against the Dark Arts class and finish taking the quiz!'
 },
 {
