@@ -57,10 +57,13 @@ img:after {
     grid-row-start: 3;
 }
 
+#map-snitch {
+    transform: rotate(20deg);
+}
+
 #map-door {
-    
-   grid-column-start: 2;
-   grid-row-start: 3;
+    grid-column-start: 2;
+    grid-row-start: 3;
 }
 
 #map-door img {

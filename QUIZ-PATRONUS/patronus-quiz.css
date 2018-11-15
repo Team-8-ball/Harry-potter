@@ -3,6 +3,12 @@ html {
     background-size: cover;
 }
 
+h2 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
 #root {
     color: black;
     background: rgba(255, 255, 255, 0.8);
