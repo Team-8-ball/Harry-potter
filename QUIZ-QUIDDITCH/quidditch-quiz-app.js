@@ -23,12 +23,12 @@ function makeTemplate() {
 
         <label for="choice-c">
             <input type="radio" id="choice-c" name="quidditch" value="c" required>
-            C. Honestly, I don&#8217d care about winning. I just want to knock people off their brooms. 
+            C. Honestly, I don&#8217t care about winning. I just want to knock people off their brooms. 
         </label>
     
         <label for="choice-d">
             <input type="radio" id="choice-d" name="quidditch" value="d" required>
-            D. All or nothing. I&#8217v got dreams of playing quidditch professionally.   
+            D. All or nothing. I&#8217ve got dreams of playing quidditch professionally.   
         </label>
     </form>
     </div>

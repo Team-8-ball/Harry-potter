@@ -2,6 +2,9 @@ html {
     background: url('../ASSETS/end-story-bkgrnd.jpg') no-repeat center center fixed;
     background-size: cover;
 }
+body{
+    cursor: url('../ASSETS/footprints-icon-8.cur'), auto;
+}
 
 #root {
     color: black;
@@ -40,6 +43,7 @@ label {
 }
 
 button {
+    cursor:pointer;
     margin: 30px;
     height: 50px;
     font-size: 20px;
