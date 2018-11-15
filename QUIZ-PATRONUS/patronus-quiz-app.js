@@ -5,31 +5,31 @@ function makeTemplate() {
     return html`
     <div class="question">
     <h3>Think of your happiest memory... What comes to mind first?</h3>
-</div>
+    </div>
 
-<div class="choices">
-<form id="patronus-quiz">
-    <label for="choice-a">
-        <input type="radio" id="choice-a" name="patronus" value="a">
-        A. My family.  
-    </label>
+    <div class="choices">
+    <form id="patronus-quiz">
+        <label for="choice-a">
+            <input type="radio" id="choice-a" name="patronus" value="a">
+            A. Fun, carefree days with my family.  
+        </label>
 
-    <label for="choice-b">
-        <input type="radio" id="choice-b" name="patronus" value="b">
-        B. My friends. 
-    </label>
+        <label for="choice-b">
+            <input type="radio" id="choice-b" name="patronus" value="b">
+            B. Mastering that lab that I spent days working on! 
+        </label>
 
-    <label for="choice-c">
-        <input type="radio" id="choice-c" name="patronus" value="c">
-        C. Personal achievements
-    </label>
+        <label for="choice-c">
+            <input type="radio" id="choice-c" name="patronus" value="c">
+            C. Outlasting the competition to win the last Goblet of Fire competion. I'm the best!
+        </label>
 
-    <label for="choice-d">
-        <input type="radio" id="choice-d" name="patronus" value="d">
-        D. Happy memories? What?
-    </label>
-</form>
-</div>
+        <label for="choice-d">
+            <input type="radio" id="choice-d" name="patronus" value="d">
+            D. The love of my mother, who then died before my eyes.
+        </label>
+    </form>
+    </div>
     `;
 }
 export default class PatronusApp {

@@ -23,6 +23,10 @@ function makeTemplate() {
         <span id="house"></span>
     </div>
     <div id="patronus-response">
+        Only the best witches and wizards manage to cast a Patronus, 
+        but you're exceptional! That last encounter with Fluffy helped 
+        you along. What personality traits influenced the 
+        type of Patronus you summon?
         <span id="patronus"></span>
     </div>
     <div id="career-response">
