@@ -42,10 +42,10 @@ img {
     justify-content: space-between;
     padding: 15px;
 }
+
 #cheri {
     grid-column-start: 2;
     grid-row-start: 3;
-
 }
 
 #paige {
@@ -67,6 +67,7 @@ header {
     text-align: center;
     font-size: 45px;
 }
+
 button {
     margin: 30px;
     height: 50px;
@@ -75,8 +76,8 @@ button {
     text-transform: uppercase;
     font-weight: bold;
     background: rgba(255, 255, 255, 0.6);
-
 }
+
 #return-home {
     text-align: center;
     margin: 30px;
