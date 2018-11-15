@@ -3,16 +3,16 @@ import resultsApi from './result-api.js';
 
 function makeTemplate() {
     return html `
-    <div id="input-section"> 
+    <span> 
         <form class="sign-in"> 
         <p>
-        <label for="name">Name:</label>
+        <label for="name"></label>
         </p>
         <input name="name" id="name" placeholder="Muggle Name">
         <button> Start!</button>
 
         </form>
-    </div>
+    </span>
     `;
 }
 export default class InputName {
