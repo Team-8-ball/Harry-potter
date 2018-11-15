@@ -4,7 +4,7 @@ import resultsApi from '../result-api.js';
 function makeTemplate() {
     return html`
     <div class="question">
-        <h3>You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass.</h3>
+        <h2>You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass.</h2>
         <p>Which sounds most like you?</p>
     </div>
 
