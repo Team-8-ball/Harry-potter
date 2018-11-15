@@ -24,15 +24,10 @@ export default class InputName {
         form.addEventListener('submit', event => {
             event.preventDefault();
   
-            
             const user = {
                 name: elements.name.value,
             };
-
             window.location.replace('../MAP/map.html');
-
-            console.log('This is the user`s name', user);
-
             resultsApi.add(user);
         });
 

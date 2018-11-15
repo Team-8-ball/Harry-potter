@@ -8,7 +8,6 @@ h2 {
     font-size: 22px;
 }
 
-
 #root {
     color: black;
     background: rgba(255, 255, 255, 0.8);
@@ -20,7 +19,8 @@ h2 {
 }
 
 label {
-    font-size: 18px;
+    font-family: Bookman;
+    font-size: 20px;
     text-indent: -2em;
     margin: 20px;
 }
