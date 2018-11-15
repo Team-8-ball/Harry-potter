@@ -5,7 +5,9 @@ function makeTemplate() {
     return html `
         <div id="root"> </div>
         <button id="button">Cast Your Name!</button>
-    `;
+        
+        <a href="../ABOUT-US/about-us.html" id=back-button><button>Text</button></a>
+        `;
 }
 
 export default class Goblet {

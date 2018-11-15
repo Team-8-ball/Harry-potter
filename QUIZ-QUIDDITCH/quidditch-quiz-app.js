@@ -6,7 +6,7 @@ function makeTemplate() {
     <div class="question">
         <h3>"Rough game, Quidditch."<br>
         "Brutal, but no one's died in years."</h3>
-        <p>What are you willing to sacrifice for house&#8217s glory?</p>
+        <p>What are you willing to sacrifice for the glory of your house?</p>
     </div>
 
     <div class="choices">
