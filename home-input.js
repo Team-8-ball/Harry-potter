@@ -8,7 +8,7 @@ function makeTemplate() {
         <p>
         <label for="name"></label>
         </p>
-        <input name="name" id="name" placeholder="Muggle Name">
+        <input name="name" id="name" placeholder="Muggle Name" required>
         <button> Start!</button>
 
         </form>
