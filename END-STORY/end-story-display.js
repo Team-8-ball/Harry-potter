@@ -31,6 +31,9 @@ function makeTemplate() {
     <div id="career-response">
         <span id="career"></span>
     </div>
+    <div id="quidditch-response">
+        <span id="quidditch"></span>
+    </div>
     <div id="the-end-response">
         What a journey you've had! Definitely one for the wizarding books! 
         However, everyone meets their demise. 
@@ -70,6 +73,7 @@ export default class DisplayText{
             const houseContainer = dom.querySelector('#house');
             const patronusContainer = dom.querySelector('#patronus');
             const careerContainer = dom.querySelector('#career');
+            const quidditchContainer = dom.querySelector('#quidditch');
     
             if(userObj.wand === 'a'){
                 wandContainer.textContent = answers[0].a;
@@ -117,6 +121,17 @@ export default class DisplayText{
                 careerContainer.textContent = answers[3].d;
             } else {
                 careerContainer.textContent = answers[3].e;
+            }
+            if(userObj.quidditch === 'a'){
+                quidditchContainer.textContent = answers[4].a;
+            } else if(userObj.quidditch === 'b') {
+                quidditchContainer.textContent = answers[4].b;
+            } else if(userObj.quidditch === 'c') {
+                quidditchContainer.textContent = answers[4].c;
+            } else if(userObj.quidditch === 'd') {
+                quidditchContainer.textContent = answers[4].d;
+            } else {
+                quidditchContainer.textContent = answers[4].e;
             }
     
             const button = dom.querySelector('button');
