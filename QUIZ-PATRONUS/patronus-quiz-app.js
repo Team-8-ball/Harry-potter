@@ -10,22 +10,22 @@ function makeTemplate() {
     <div class="choices">
     <form id="patronus-quiz">
         <label for="choice-a">
-            <input type="radio" id="choice-a" name="patronus" value="a">
+            <input type="radio" id="choice-a" name="patronus" value="a" required>
             A. Fun, carefree days with my family.  
         </label>
 
         <label for="choice-b">
-            <input type="radio" id="choice-b" name="patronus" value="b">
+            <input type="radio" id="choice-b" name="patronus" value="b" required>
             B. Mastering that lab that I spent days working on! 
         </label>
 
         <label for="choice-c">
-            <input type="radio" id="choice-c" name="patronus" value="c">
-            C. Outlasting the competition to win the last Goblet of Fire competion. I'm the best!
+            <input type="radio" id="choice-c" name="patronus" value="c" required>
+            C. Outlasting the competition to win the last Goblet of Fire competition. I'm the best!
         </label>
 
         <label for="choice-d">
-            <input type="radio" id="choice-d" name="patronus" value="d">
+            <input type="radio" id="choice-d" name="patronus" value="d" required>
             D. The love of my mother, who then died before my eyes.
         </label>
     </form>
