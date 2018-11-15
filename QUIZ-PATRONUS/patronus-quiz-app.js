@@ -4,7 +4,7 @@ import resultsApi from '../result-api.js';
 function makeTemplate() {
     return html`
     <div class="question">
-    <h2>Think of your happiest memory... What comes to mind first?</h>
+    <h2>Think of your happiest memory... What comes to mind first?</h2>
     </div>
 
     <div class="choices">

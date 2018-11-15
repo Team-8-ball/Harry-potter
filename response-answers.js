@@ -27,10 +27,10 @@ const answers = [{
     e: 'Go back to Hogwarts and finish taking the quiz!'
 },
 {
-    a:'There is not easy way out in life. Much less in quidditch. Becoming a Seeker should teach you a few valuable life lessons. As a Seeker you be arguably the most important member of your team. Don`t let them down.',
+    a:'There is no easy way out in life. Much less in quidditch. Becoming a Seeker should teach you a few valuable life lessons. As a Seeker you be arguably the most important member of your team. Don`t let them down.',
     b:'The enthusiasm is a much needed change of pace .You would be exhilarating to watch as a Chaser. Being a Chaser makes you the foundations of the quidditch. The sport thanks you.',
-    c:'Without doubt, your house needs you are as a Beater. Willingness to inflict physical pain on the competing team is a trait in high demand. Congrats bucko.',
-    d: 'Your passion for the most revered sport in wizard history is noted. But.....but you didn`t make the team. Sorry kid.',
+    c:'Without doubt, your house needs you as a Beater. Willingness to inflict physical pain on the competing team is a trait in high demand. Congrats bucko.',
+    d: 'Your passion for the most revered sport in wizard history is noted. But.....you didn`t make the team. Sorry kid.',
     e: 'Tryouts aren`t over! Go back the field and finish what you`ve started'
 }
 ];

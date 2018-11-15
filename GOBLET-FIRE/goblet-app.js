@@ -4,8 +4,9 @@ import CastName from './goblet-button.js';
 function makeTemplate() {
     return html `
         <div id="root"> </div>
-        <button id="button">Cast Your Name!</button>
-    `;
+        <button id="cast-name">Cast Your Name!</button>
+         
+        `;
 }
 
 export default class Goblet {
