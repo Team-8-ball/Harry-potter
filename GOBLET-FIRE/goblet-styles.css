@@ -18,7 +18,9 @@ h1 {
 }
 
 #back-button {
-    position:relative;
+    position: fixed;
+    left: 42%;
+    top: 85%;
     margin: 30px;
     height: 50px;
     font-size: 20px;
