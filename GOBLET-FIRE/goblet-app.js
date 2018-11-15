@@ -5,12 +5,10 @@ function makeTemplate() {
     return html `
         <div id="root"> </div>
         <button id="cast-name">Cast Your Name!</button>
-         
         `;
 }
 
 export default class Goblet {
-
     render() {
 
         const dom = makeTemplate();
@@ -22,7 +20,6 @@ export default class Goblet {
             const castButton = new CastName ();
             textContainer.appendChild(castButton.render());
             castName.classList.add('hidden');
-        
         });
 
         return dom;
