@@ -7,7 +7,7 @@ function makeTemplate() {
         </div>
         <div>
             <a href="../ABOUT-US/about-us.html"><button id="back-button">Go Back</button></a>
-            <img id="fire" src="../ASSETS/fire-cup.gif">
+            <img id="fire" src="../ASSETS/fire-cup.gif" alt="fire">
         </div>
     `;
 }

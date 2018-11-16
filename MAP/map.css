@@ -3,13 +3,6 @@ html {
     background-size: cover;
 }
 
-#quiz-icon {
-    cursor: auto;
-    height: 100px;
-    /* width: 100px; */
-    cursor: url(./ASSETS/footprints-icon-8.cur); 
-}
-
 img {
     width: 100%;
     max-width: 200px;

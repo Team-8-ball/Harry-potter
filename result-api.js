@@ -1,7 +1,5 @@
 let resultsArray = [];
 
-
-
 const resultsApi = {
 
     saveResults() {
@@ -15,6 +13,7 @@ const resultsApi = {
         }
         return resultsArray;
     },
+    
     add(results) {
         resultsArray.push(results);
 
