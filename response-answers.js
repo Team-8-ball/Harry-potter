@@ -29,7 +29,7 @@ const answers = [
     },
     {
         a: 'There is no easy way out in life, much less in quidditch. Becoming a Seeker should teach you a few valuable life lessons. As a Seeker you are arguably the most important member of your team. Don`t let them down.',
-        b: 'The enthusiasm is a much needed change of pace. You would be exhilarating to watch as a ChaserBein, making you the foundation of the quidditch team. The sport thanks you.',
+        b: 'The enthusiasm is a much needed change of pace. You would be exhilarating to watch as a Chaser, making you the foundation of the quidditch team. The sport thanks you.',
         c: 'Without doubt, your house needs you as a Beater. Willingness to inflict physical pain on the competing team is a trait in high demand. Congrats, Bucko!',
         d: 'Your passion for the most revered sport in wizard history is noted. But.....you didn`t make the team. Sorry, kid.',
         e: 'Tryouts aren`t over! Go back the field and finish what you`ve started'
