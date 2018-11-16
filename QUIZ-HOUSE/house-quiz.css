@@ -13,7 +13,6 @@ p {
 }
 
 #root {
-    color: black;
     background: rgba(255, 255, 255, 0.8);
     position: relative;
     top: 20vh;
@@ -23,7 +22,6 @@ p {
 }
 
 label {
-    font-family: Bookman;
     font-size: 20px;
     text-indent: -2em;
     margin: 20px;
@@ -37,5 +35,4 @@ form {
 #house-quiz {
     display: flex;
     justify-content: space-around;
-    
 }

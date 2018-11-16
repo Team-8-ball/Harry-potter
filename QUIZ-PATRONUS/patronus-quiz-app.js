@@ -32,6 +32,7 @@ function makeTemplate() {
         </div>
     `;
 }
+
 export default class PatronusApp {
     render() {
         const dom = makeTemplate();

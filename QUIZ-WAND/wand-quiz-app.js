@@ -8,32 +8,33 @@ function makeTemplate() {
         </div>
 
         <div class="choices">
-        <form id="wand-quiz">
-            <label for="choice-a">
-                <input type="radio" id="choice-a" name="wand" value="a" required>
-                A. Imperfection.
-            </label>
-        
-            <label for="choice-b">
-                <input type="radio" id="choice-b" name="wand" value="b" required>
-                B. Losing my dearest friend.
-            </label>
-        
-            <label for="choice-c">
-                <input type="radio" id="choice-c" name="wand" value="c" required>
-                C. Being exposed for who I really am.
-            </label>
-        
-            <label for="choice-d">
-                <input type="radio" id="choice-d" name="wand" value="d" required>
-                D. Isolation. I grew up in a cupboard under the stairs.    
-            </label>
-        </form>     
+            <form id="wand-quiz">
+                <label for="choice-a">
+                    <input type="radio" id="choice-a" name="wand" value="a" required>
+                    A. Imperfection.
+                </label>
+            
+                <label for="choice-b">
+                    <input type="radio" id="choice-b" name="wand" value="b" required>
+                    B. Losing my dearest friend.
+                </label>
+            
+                <label for="choice-c">
+                    <input type="radio" id="choice-c" name="wand" value="c" required>
+                    C. Being exposed for who I really am.
+                </label>
+            
+                <label for="choice-d">
+                    <input type="radio" id="choice-d" name="wand" value="d" required>
+                    D. Isolation. I grew up in a cupboard under the stairs.    
+                </label>
+            </form>     
         </div>
     `;
 }
 
 export default class WandApp {
+    
     render() {
         const dom = makeTemplate();
         

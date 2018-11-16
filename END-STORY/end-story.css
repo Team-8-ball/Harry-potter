@@ -7,7 +7,6 @@ body {
 }
 
 #root {
-    color: black;
     background: rgba(255, 255, 255, 0.8);
     position: relative;
     top: 5vh;
@@ -19,17 +18,12 @@ body {
 div {
     margin: 5px;
     margin-bottom: 15px;
-    font-family: Bookman;
     font-size: 16px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-}
-
-label {
-    margin: 20px;
 }
 
 #career-quiz {
@@ -45,7 +39,7 @@ label {
 }
 
 button {
-    cursor:pointer;
+    cursor: pointer;
     margin: 20px;
     height: 50px;
     font-size: 20px;
@@ -53,7 +47,6 @@ button {
     text-transform: uppercase;
     font-weight: bold;
     background: rgba(255, 255, 255, 0.6);
-
 }
 
 p {
@@ -63,5 +56,4 @@ p {
 
 img {
     width: 100px;
-    
 }

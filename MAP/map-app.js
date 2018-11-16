@@ -17,7 +17,6 @@ function makeTemplate() {
         `;
 }
 
-
 export default class App {
     constructor(){
         this.user = user[0];
@@ -52,7 +51,6 @@ export default class App {
         if(this.user.career && this.user.wand && this.user.house && this.user.patronus && this.user.quidditch) { 
             door.classList.remove('hidden'); 
             instructions.classList.add('hidden');
-
         }
 
         return dom;
