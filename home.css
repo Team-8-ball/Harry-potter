@@ -22,6 +22,7 @@ h1 {
     font-family: parryHotter;
     font-size: 70px;
 }
+
 #input-section {
     margin: auto ;
     font-size: 18px;
@@ -50,7 +51,7 @@ button {
     background: rgba(255, 255, 255, 0.6);
 }
 
- input {
+input {
     background-color:rgba(0, 0, 0, 0);
     color:black;
     border: none;

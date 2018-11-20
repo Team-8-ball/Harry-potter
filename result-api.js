@@ -1,26 +1,19 @@
-let resultsArray = [];
+// let resultsArray = [];
+// You don't need an array, it's a user object!
 
-const resultsApi = {
+const userApi = {
 
-    saveResults() {
-        localStorage.setItem('results', JSON.stringify(resultsArray));
-    },
-
-    getAll() {
-        const json = localStorage.getItem('results');
+    get() {
+        const json = localStorage.getItem('user');
         if(json) {
-            resultsArray = JSON.parse(json);
+            return JSON.parse(json);
         }
-        return resultsArray;
+        return null;
     },
     
-    add(results) {
-        resultsArray.push(results);
-
-        this.saveResults();
+    save(user) {
+        localStorage.setItem('user', JSON.stringify(user));
     }
 };
 
-resultsApi.getAll();
-
-export default resultsApi;
+export default userApi;

@@ -9,10 +9,10 @@ function makeTemplate() {
 
 export default class App {
     render() {
-
         const dom = makeTemplate();
-        const displayText = new DisplayText();
+        
         const storyContainer = dom.querySelector('#end-story');
+        const displayText = new DisplayText();
         storyContainer.appendChild(displayText.render());
 
         return dom;
