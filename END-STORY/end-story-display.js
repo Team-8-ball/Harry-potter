@@ -5,11 +5,11 @@ import dataApi from '../response-api.js';
 
 var apiData = resultsApi.getAll();
 var answers = dataApi.getAll();
-var userObj = apiData[0];
+var user = apiData[0];
 
 function makeTemplate() {
     return html`
-        <h1>${userObj.name}, here is your magical story...</h1>
+        <h1>${user.name}, here is your magical story...</h1>
         <div id="wand-response">
             Diagon Alley or Knocturn Alley? Whatever your pick, 
             you need a wand before you head off for school. 
@@ -63,55 +63,55 @@ function makeTemplate2() {
     `;
 }
 
-function printResults(userObj, objectContainer, num) {
-    if(userObj === 'a') {
-        objectContainer.textContent = answers[num].a;
-    } else if(userObj === 'b') {
-        objectContainer.textContent = answers[num].b;
-    } else if(userObj === 'c') {
-        objectContainer.textContent = answers[num].c;
-    } else if(userObj === 'd') {
-        objectContainer.textContent = answers[num].d;
-    } else {
-        objectContainer.textContent = answers[num].e;
-    }
-}
+// Nice job making a common function :)
+// You can use more than one dynamic property, making
+// this a lot shorter!
+// Though I moved this inline in the render method below
+// function printResults(answer, objectContainer, num) {
+//     if(!answer) {
+//         answer = 'e';
+//     }
+
+//     objectContainer.textContent = answers[num][answer];
+// }
 
 export default class DisplayText{
     
     render() {
-        if(!userObj){
+        // nice job having different logic if no user
+        if(!user){
             const dom = makeTemplate2();
             const button = dom.querySelector('button');
             button.addEventListener('click', () => {
                 window.location = '../index.html';
             });
             return dom;
-        } else {
-            const dom = makeTemplate();
-            const wandContainer = dom.querySelector('#wand');
-            const houseContainer = dom.querySelector('#house');
-            const patronusContainer = dom.querySelector('#patronus');
-            const careerContainer = dom.querySelector('#career');
-            const quidditchContainer = dom.querySelector('#quidditch');
+        } 
 
-            printResults(userObj.wand, wandContainer, 0);
-            printResults(userObj.house, houseContainer, 1);
-            printResults(userObj.patronus, patronusContainer, 2);
-            printResults(userObj.career, careerContainer, 3);
-            printResults(userObj.quidditch, quidditchContainer, 4);
+        // no need for else because if has return statement
+        const dom = makeTemplate();
 
-            const button = dom.querySelector('button');
-            button.addEventListener('click', () => {
-                localStorage.clear();
-                window.location = '../index.html';
-            });
+        // here's how you can reduce repreated code:
+        const categories = ['wand', 'house', 'patronus', 'career', 'quidditch'];
 
-            const magicEnd = new MagicEnd();
-            const endContainer = dom.querySelector('#the-end');
-            endContainer.appendChild(magicEnd.render());
-            
-            return dom;
-        }
+        categories.forEach(category => {
+            const container = dom.querySelector('#' + category);
+            const answer = user[category] || 'e';
+            // see notes in response-answers.js for changing data structure
+            const options = answers[category];
+            container.textContent = options[answer];
+        });
+
+        const button = dom.querySelector('button');
+        button.addEventListener('click', () => {
+            localStorage.clear();
+            window.location = '../index.html';
+        });
+
+        const magicEnd = new MagicEnd();
+        const endContainer = dom.querySelector('#the-end');
+        endContainer.appendChild(magicEnd.render());
+        
+        return dom;
     }
 }

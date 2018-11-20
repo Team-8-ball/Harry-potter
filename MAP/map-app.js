@@ -1,7 +1,9 @@
 import html from '../html.js';
-import resultsApi from '../result-api.js';
+import userApi from '../result-api.js';
 
-let user = resultsApi.getAll();
+
+// "Get All Results" which returns a user???
+// let user = resultsApi.getAll();
 
 function makeTemplate() {
     return html`
@@ -19,39 +21,59 @@ function makeTemplate() {
 
 export default class App {
     constructor(){
-        this.user = user[0];
+        // This reads much better. Get a user.
+        this.user = userApi.get();
     }
 
     render() {
         const dom = makeTemplate();
-        let house = dom.querySelector('#map-house');
-        let patronus = dom.querySelector('#map-patronus');
-        let wand = dom.querySelector('#map-wand');
-        let career = dom.querySelector('#map-career');
         let door = dom.querySelector('#map-door');
-        let quidditch = dom.querySelector('#map-snitch');
+        
+        // let house = dom.querySelector('#map-house');
+        // let patronus = dom.querySelector('#map-patronus');
+        // let wand = dom.querySelector('#map-wand');
+        // let career = dom.querySelector('#map-career');
+        // let quidditch = dom.querySelector('#map-snitch');
+        
         let instructions = dom.querySelector('#instructions');
+
         door.classList.add('hidden');
 
-        if(this.user.house) {
-            house.classList.add('hidden');
-        }
-        if(this.user.patronus) {
-            patronus.classList.add('hidden');
-        }
-        if(this.user.wand) {
-            wand.classList.add('hidden');
-        }
-        if(this.user.career) {
-            career.classList.add('hidden');
-        }
-        if(this.user.quidditch) {
-            quidditch.classList.add('hidden');
-        }
-        if(this.user.career && this.user.wand && this.user.house && this.user.patronus && this.user.quidditch) { 
+        // Consider a more dynamic approach:
+        const locations = ['house', 'patronus', 'wand', 'career', 'quidditch'];
+
+        locations.forEach(location => {
+            if(this.user[location]) {
+                const link = dom.querySelector('#map-' + location);
+                link.classList.add('hidden');
+            }
+        });
+
+        // if(this.user.house) {
+        //     house.classList.add('hidden');
+        // }
+        // if(this.user.patronus) {
+        //     patronus.classList.add('hidden');
+        // }
+        // if(this.user.wand) {
+        //     wand.classList.add('hidden');
+        // }
+        // if(this.user.career) {
+        //     career.classList.add('hidden');
+        // }
+        // if(this.user.quidditch) {
+        //     quidditch.classList.add('hidden');
+        // }
+
+        if(locations.every(location => this.user[location])) {
             door.classList.remove('hidden'); 
-            instructions.classList.add('hidden');
+            instructions.classList.add('hidden');    
         }
+
+        // if(this.user.career && this.user.wand && this.user.house && this.user.patronus && this.user.quidditch) { 
+        //     door.classList.remove('hidden'); 
+        //     instructions.classList.add('hidden');
+        // }
 
         return dom;
     }

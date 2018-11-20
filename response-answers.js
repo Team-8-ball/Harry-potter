@@ -1,3 +1,18 @@
+// if you use an object you can lookup by category name:
+// const answers = {
+//     wand: {
+//         a: 'Your wand is 10 3/4" vine wood with a dragon heartstring core. Wizards with this wand seek a greater purpose in life. You have the wand of Hermione Granger.',
+//         b: 'You were expelled from Hogwarts after being falsely accused of releasing a giant spider. You took your broken wand pieces and fashioned an umbrella for your magic wielding. You have the wand of Rubeus Hagrid.',
+//         c: 'Your wand is 9 1/4" chestnut with a dragon heartstring core. You betrayed your friends and sold them to the Dark Lord. You have the wand of Peter Pettigrew.',
+//         d: 'Your wand is 11" holly with a phoenix feather core. These wands are best with someone who seeks dangerous or spiritual quests. You have the wand of Harry Potter.',
+//         e: 'Go back to Diagon Alley and finish taking the quiz'
+//     },
+//     house: {
+//         /* etc */
+//     },
+//     // etc...
+// }
+
 const answers = [
     {
         a: 'Your wand is 10 3/4" vine wood with a dragon heartstring core. Wizards with this wand seek a greater purpose in life. You have the wand of Hermione Granger.',

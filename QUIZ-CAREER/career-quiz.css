@@ -25,9 +25,6 @@ label {
 form {
     display: flex;
     flex-direction: column;
-}
-
-#career-quiz {
     display: flex;
     justify-content: space-around; 
 }
