@@ -1,12 +1,12 @@
-#Are You a Wizard?
+# Are You a Wizard?
 
-*Authors:* [Lance Merrill](https://github.com/Zilula), [Paige Gorry](), and [Cheri Portman](https://github.com/CheriPortman)
+_Authors:_ [Lance Merrill](https://github.com/Zilula), [Paige Gorry](), and [Cheri Portman](https://github.com/CheriPortman)
 
-##Overview
+## Overview
 An interative Harry-Potter-themed personality quiz where you can learn your wizarding world fate from start to finish!
 
-##Technologies Used
+## Technologies Used
 HTML, CSS, vanilla JavaScript
 
-###Special Thanks
+### Special Thanks
 Alchemy Code Lab, Portland, OR
