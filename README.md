@@ -1,3 +1,12 @@
-An interative Harry-Potter-themed personality "quiz." 
-Authors: Lance Merrill, Paige Gorry, and Cheri Portman
-BootCamp 1 students at Alchemy Code Lab, Portland, OR
+#Are You a Wizard?
+
+*Authors:* [Lance Merrill](https://github.com/Zilula), [Paige Gorry](), and [Cheri Portman](https://github.com/CheriPortman)
+
+##Overview
+An interative Harry-Potter-themed personality quiz where you can learn your wizarding world fate from start to finish!
+
+##Technologies Used
+HTML, CSS, vanilla JavaScript
+
+###Special Thanks
+Alchemy Code Lab, Portland, OR
