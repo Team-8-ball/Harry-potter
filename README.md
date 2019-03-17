@@ -8,7 +8,7 @@ An interative Harry-Potter-themed personality quiz where you can learn your wiza
 ![Wizard Screenshot](screenshot.png)
 
 ## Technologies Used
-HTML, CSS, vanilla JavaScript
+HTML, CSS, JavaScript
 
 ### Special Thanks
 Alchemy Code Lab, Portland, OR
